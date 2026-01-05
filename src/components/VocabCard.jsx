@@ -1,13 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Volume2, Eye, EyeOff, CheckCircle, XCircle, RefreshCcw, HelpCircle, Ear } from 'lucide-react';
-
-// 🎵 Base64 Sound Effects (ไม่ต้องโหลดไฟล์ ใช้ได้เลย)
-const SOUNDS = {
-       correct: "data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJdwbXz//w+Gl42Df7b//w+Kj4aJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3z//w+LjoaJg3w=",
-       wrong: "data:audio/wav;base64,UklGRiYAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQcAAAAA////AAAAAA==" // (เสียงตื๊ดสั้นๆ)
-};
-// หมายเหตุ: Base64 ด้านบนเป็นตัวอย่างสั้นๆ เพื่อให้โค้ดไม่ยาวเกินไป 
-// ถ้าเสียงเบาไป Browser สมัยใหม่มี AudioContext ที่สร้างเสียง Beep ได้ เดี๋ยวผมใช้ AudioContext ให้ชัวร์กว่าครับ
 
 export default function VocabCard({ word, ipa, definition, example, mode, streak, onCorrect, onIncorrect }) {
        const [showSpoiler, setShowSpoiler] = useState(false);
@@ -18,12 +10,12 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
        useEffect(() => {
               setUserAnswer('');
               setCheckStatus('idle');
-              // ถ้าโหมด Spelling ให้โชว์คำแปลไทยเป็นโจทย์เลย
-              // ถ้าโหมด Flashcard ให้ปิดคำแปลไว้
+              // โหมด Spelling: เปิดเฉลยไว้เลย (แต่จะ Mask คำศัพท์ในประโยคตัวอย่าง)
+              // โหมด Flashcard: ปิดเฉลยไว้
               setShowSpoiler(mode === 'spelling');
        }, [word, mode]);
 
-       // 🔊 ระบบเสียง Effect (ใช้ Web Audio API เพื่อความชัวร์และเร็ว)
+       // 🔊 ระบบเสียง Effect (Web Audio API)
        const playSound = (type) => {
               const AudioContext = window.AudioContext || window.webkitAudioContext;
               if (!AudioContext) return;
@@ -34,7 +26,6 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
               gain.connect(ctx.destination);
 
               if (type === 'correct') {
-                     // เสียงปิ๊ง (High Pitch, Ding)
                      osc.type = 'sine';
                      osc.frequency.setValueAtTime(800, ctx.currentTime);
                      osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
@@ -43,7 +34,6 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
                      osc.start();
                      osc.stop(ctx.currentTime + 0.5);
               } else {
-                     // เสียงตื๊ด (Low Pitch, Buzz)
                      osc.type = 'sawtooth';
                      osc.frequency.setValueAtTime(150, ctx.currentTime);
                      osc.frequency.linearRampToValueAtTime(100, ctx.currentTime + 0.3);
@@ -54,7 +44,6 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
               }
        };
 
-       // 🗣️ อ่านออกเสียงคำศัพท์
        const speak = () => {
               window.speechSynthesis.cancel();
               const utterance = new SpeechSynthesisUtterance(word);
@@ -71,23 +60,21 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
               const input = userAnswer.trim().toLowerCase();
 
               if (mode === 'flashcard') {
-                     // โหมด Flashcard: พิมพ์ไทย -> ตรวจว่าตรงกับ Definition ไหม
                      const answer = definition.toLowerCase();
                      isCorrect = answer.includes(input) || input.includes(answer);
               } else {
-                     // โหมด Spelling: พิมพ์อังกฤษ -> ตรวจว่าตรงกับ Word ไหม
                      isCorrect = input === word.toLowerCase();
               }
 
               if (isCorrect) {
                      setCheckStatus('correct');
                      playSound('correct');
-                     onCorrect(); // เพิ่มคะแนน
-                     setShowSpoiler(true); // เฉลยหมด
+                     onCorrect();
+                     setShowSpoiler(true); // เปิดเฉลยหมด
               } else {
                      setCheckStatus('incorrect');
                      playSound('wrong');
-                     onIncorrect(); // รีเซ็ต Streak
+                     onIncorrect();
               }
        };
 
@@ -95,7 +82,16 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
               if (e.key === 'Enter' && checkStatus === 'idle') handleCheck();
        };
 
-       // --- UI แยกตามโหมด ---
+       // 🛠️ ฟังก์ชันเซ็นเซอร์คำศัพท์ในประโยคตัวอย่าง (Masking)
+       const getMaskedExample = (text) => {
+              // ถ้าไม่ได้อยู่ในโหมด Spelling หรือตอบถูกแล้ว ให้โชว์เต็มๆ
+              if (mode !== 'spelling' || checkStatus === 'correct') return text;
+
+              // ถ้าอยู่ในโหมด Spelling และยังตอบไม่ถูก ให้แทนที่คำศัพท์ด้วย ______
+              // ใช้ RegExp แบบ 'gi' (Global, Case-insensitive) เพื่อจับคำไม่ว่าจะตัวเล็กหรือใหญ่
+              const regex = new RegExp(word, 'gi');
+              return text.replace(regex, '_______');
+       };
 
        return (
               <div className="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col h-full relative overflow-hidden">
@@ -103,14 +99,14 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
                      {/* 1. Area แสดงโจทย์ */}
                      <div className="flex-1 overflow-y-auto p-4 pb-2 overscroll-contain flex flex-col items-center">
 
-                            {/* Streak Fire Effect Overlay */}
+                            {/* Streak Fire Overlay */}
                             {streak >= 5 && checkStatus === 'correct' && (
                                    <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-50">
                                           <div className="text-9xl animate-ping opacity-50">🔥</div>
                                    </div>
                             )}
 
-                            {/* 🅰️ โหมด Flashcard: โชว์ศัพท์ -> ทายความหมาย */}
+                            {/* 🅰️ Flashcard Mode */}
                             {mode === 'flashcard' && (
                                    <div className="text-center mt-6 mb-4">
                                           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 tracking-tight">{word}</h2>
@@ -121,7 +117,7 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
                                    </div>
                             )}
 
-                            {/* 🅱️ โหมด Spelling: ปิดศัพท์ -> ฟังเสียง/ดูแปลไทย -> ทายศัพท์ */}
+                            {/* 🅱️ Spelling Mode */}
                             {mode === 'spelling' && (
                                    <div className="text-center mt-6 mb-4 w-full">
                                           {checkStatus === 'correct' ? (
@@ -129,6 +125,7 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
                                           ) : (
                                                  <div className="flex flex-col items-center gap-3">
                                                         <div className="flex gap-2 text-4xl font-bold text-gray-300 tracking-widest select-none">
+                                                               {/* สร้างขีดตามจำนวนตัวอักษร */}
                                                                {word.split('').map((_, i) => <span key={i} className="border-b-4 border-gray-200 w-8 h-12 block"></span>)}
                                                         </div>
                                                         <button onClick={speak} className="mt-2 px-6 py-3 bg-purple-100 text-purple-600 rounded-full hover:bg-purple-200 transition flex items-center gap-2 font-bold shadow-sm active:scale-95">
@@ -166,7 +163,15 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
 
                                    <div className={`transition-all duration-300 ${showSpoiler ? 'opacity-100 blur-0' : 'opacity-0 blur-md select-none'}`}>
                                           <p className="text-gray-800 font-medium text-lg leading-relaxed font-sans">{definition}</p>
-                                          {example && <p className="mt-2 text-gray-500 italic text-sm font-serif">" {example} "</p>}
+
+                                          {/* 👇 ส่วนที่แก้ไข: ใช้ฟังก์ชัน getMaskedExample แทน example ตรงๆ */}
+                                          {example && (
+                                                 <div className="mt-2 pt-2 border-t border-gray-100">
+                                                        <p className="text-gray-500 italic text-sm font-serif">
+                                                               " {getMaskedExample(example)} "
+                                                        </p>
+                                                 </div>
+                                          )}
                                    </div>
 
                                    {!showSpoiler && (
@@ -190,9 +195,7 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
                                           onChange={(e) => setUserAnswer(e.target.value)}
                                           onKeyDown={handleKeyDown}
                                           disabled={checkStatus === 'correct'}
-                                          // iPad: ดันจอขึ้น
                                           onFocus={(e) => setTimeout(() => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' }), 300)}
-                                          // iPad: ดึงจอลง
                                           onBlur={() => { window.scrollTo(0, 0); }}
                                           placeholder={mode === 'spelling' ? "Type english word..." : "พิมพ์คำแปล..."}
                                           className={`w-full bg-gray-50 border rounded-xl px-4 py-3 text-lg outline-none focus:ring-2 transition

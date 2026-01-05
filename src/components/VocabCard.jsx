@@ -44,11 +44,40 @@ export default function VocabCard({ word, ipa, definition, example, mode, streak
               }
        };
 
+       // 🗣️ อ่านออกเสียงคำศัพท์ (เวอร์ชันเสียงนุ่ม ฟังชัด)
        const speak = () => {
+              // 1. หยุดเสียงเก่าก่อน (เผื่อกดรัวๆ)
               window.speechSynthesis.cancel();
+
+              // 2. สร้างเสียงพูด
               const utterance = new SpeechSynthesisUtterance(word);
-              utterance.lang = 'en-US';
-              utterance.rate = 0.8;
+
+              // 3. ดึงรายชื่อเสียงทั้งหมดในเครื่องออกมา
+              const voices = window.speechSynthesis.getVoices();
+
+              // 4. 🔍 พยายามหาเสียงที่ฟังชัดที่สุด (เรียงลำดับความอยากได้)
+              // - หาเสียงของ Google (บน Chrome/Android เสียงนี้จะเพราะสุด)
+              // - หรือหาเสียงชื่อ Samantha (บน iPad/iPhone เสียงนี้จะฟังง่ายสุด)
+              // - หรือถ้าไม่มี เอาเสียงอะไรก็ได้ที่เป็นภาษาอังกฤษสำเนียงอเมริกัน (en-US)
+              const preferredVoice = voices.find(voice =>
+                     (voice.name.includes('Google') && voice.lang.includes('en-US')) ||
+                     (voice.name.includes('Samantha') && voice.lang.includes('en')) ||
+                     voice.lang === 'en-US'
+              );
+
+              // ถ้าหาเจอ ให้ใช้เสียงนั้น
+              if (preferredVoice) {
+                     utterance.voice = preferredVoice;
+              }
+
+              // 5. 🐢 ปรับความเร็ว (0.1 ช้ามาก - 1.0 ปกติ - 2.0 เร็ว)
+              // แนะนำ 0.7 หรือ 0.8 จะฟังง่ายเหมือนครูสอนภาษา
+              utterance.rate = 0.7;
+
+              // ปรับระดับเสียง (1 = ปกติ)
+              utterance.pitch = 1;
+
+              // สั่งพูด
               window.speechSynthesis.speak(utterance);
        };
 

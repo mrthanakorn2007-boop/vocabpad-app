@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* เพิ่มเพื่อป้องกันการซูมและการเลื่อนเด้งบน iPad */
+body {
+  touch-action: none;
+  overflow: hidden;
+  background-color: #fdfbf7;
+}

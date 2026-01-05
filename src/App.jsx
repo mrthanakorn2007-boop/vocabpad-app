@@ -42,12 +42,9 @@ function LandingPage({ onStart }) {
           <span className="text-4xl"></span>
         </div>
 
-        <h1 className="text-5xl md:text-6xl font-black mb-4 tracking-tight text-gray-900">
-          Vocab<span className="text-blue-600">Pad</span>
-        </h1>
 
         <p className="text-lg md:text-xl text-gray-600 mb-8 font-medium leading-relaxed">
-          เปลี่ยน iPad ให้เป็นสมุดฝึกศัพท์อัจฉริยะ <br />
+          เหมาะสำหรับผู้ที่ใช้งานผ่าน Ipad <br />
           <span className="text-gray-400 text-base font-normal">ฟังเสียง • เขียนตอบ • สะสมคะแนน</span>
         </p>
 

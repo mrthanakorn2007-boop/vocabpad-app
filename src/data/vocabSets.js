@@ -8,19 +8,22 @@ export const vocabCategories = [
                             word: "Abundant",
                             ipa: "əˈbʌn.dənt",
                             definition: "มากมาย, อุดมสมบูรณ์",
-                            example: "We have abundant evidence to prove his guilt."
+                            example: "We have abundant evidence to prove his guilt.",
+                            example_th: "เรามีหลักฐานมากมายเพื่อพิสูจน์ความผิดของเขา"
                      },
                      {
                             word: "Accumulate",
                             ipa: "əˈkjuː.mjə.leɪt",
                             definition: "สะสม, เพิ่มพูน",
-                            example: "He accumulated a fortune through hard work."
+                            example: "He accumulated a fortune through hard work.",
+                            example_th: "เขาสะสมทรัพย์สินจำนวนมากผ่านการทำงานหนัก"
                      },
                      {
                             word: "Beneficial",
                             ipa: "ˌben.ɪˈfɪʃ.əl",
                             definition: "เป็นประโยชน์, เป็นผลดี",
-                            example: "Regular exercise is beneficial for your health."
+                            example: "Regular exercise is beneficial for your health.",
+                            example_th: "การออกกำลังกายเป็นประจำเป็นประโยชน์ต่อสุขภาพของคุณ"
                      },
                      {
                             word: "Collaborate",
@@ -549,7 +552,795 @@ export const vocabCategories = [
                      }
               ]
        },
+
+       // --- หมวดที่ 2: เตรียมสัมภาษณ์มหาลัย (ของใหม่ ✨) ---
        {
+              id: 'university_interview',
+              title: 'University Interview Prep',
+              words: [
+                     {
+                            word: "Passion",
+                            ipa: "ˈpæʃ.ən",
+                            definition: "ความหลงใหล, ความกระตือรือร้นอย่างแรงกล้า",
+                            example: "I have a strong passion for technology and innovation.",
+                            example_th: "ฉันมีความหลงใหลอย่างแรงกล้าในเทคโนโลยีและนวัตกรรม"
+                     },
+                     {
+                            word: "Contribution",
+                            ipa: "ˌkɒn.trɪˈbjuː.ʃən",
+                            definition: "การมีส่วนร่วม, การช่วยเหลือ, สิ่งที่มอบให้",
+                            example: "I am eager to make a valuable contribution to the university community.",
+                            example_th: "ฉันกระตือรือร้นที่จะสร้างประโยชน์ที่มีคุณค่าให้กับสังคมในมหาวิทยาลัย"
+                     },
+                     {
+                            word: "Extracurricular",
+                            ipa: "ˌek.strə.kəˈrɪk.jə.lər",
+                            definition: "กิจกรรมนอกหลักสูตร (กิจกรรมที่ทำนอกจากเรียน)",
+                            example: "I participated in extracurricular activities to build leadership skills.",
+                            example_th: "ฉันเข้าร่วมกิจกรรมนอกหลักสูตรเพื่อสร้างทักษะความเป็นผู้นำ"
+                     },
+                     {
+                            word: "Ambition",
+                            ipa: "æmˈbɪʃ.ən",
+                            definition: "ความทะเยอทะยาน, ความมุ่งมาดปรารถนา",
+                            example: "My ambition is to become a software engineer who changes the world.",
+                            example_th: "ความมุ่งมั่นของฉันคือการเป็นวิศวกรซอฟต์แวร์ที่เปลี่ยนแปลงโลก"
+                     },
+                     {
+                            word: "Adaptability",
+                            ipa: "əˌdæp.təˈbɪl.ə.ti",
+                            definition: "ความสามารถในการปรับตัว",
+                            example: "Adaptability is one of my greatest strengths in solving problems.",
+                            example_th: "ความสามารถในการปรับตัวคือหนึ่งในจุดแข็งที่สุดของฉันในการแก้ปัญหา"
+                     },
+                     {
+                            word: "Perspective",
+                            ipa: "pəˈspek.tɪv",
+                            definition: "มุมมอง, ทัศนคติ",
+                            example: "Studying here will broaden my perspective on global issues.",
+                            example_th: "การเรียนที่นี่จะช่วยเปิดกว้างมุมมองของฉันต่อประเด็นระดับโลก"
+                     },
+                     {
+                            word: "Dedication",
+                            ipa: "ˌded.ɪˈkeɪ.ʃən",
+                            definition: "ความอุทิศตน, ความทุ่มเท",
+                            example: "Success comes from hard work and dedication.",
+                            example_th: "ความสำเร็จมาจากความทำงานหนักและความทุ่มเท"
+                     },
+                     {
+                            word: "Strength",
+                            ipa: "streŋθ",
+                            definition: "จุดแข็ง",
+                            example: "My main strength is my ability to work well under pressure.",
+                            example_th: "จุดแข็งหลักของฉันคือความสามารถในการทำงานได้ดีภายใต้ความกดดัน"
+                     },
+                     {
+                            word: "Weakness",
+                            ipa: "ˈwiːk.nəs",
+                            definition: "จุดอ่อน",
+                            example: "My weakness is that I can be a perfectionist sometimes.",
+                            example_th: "จุดอ่อนของฉันคือบางครั้งฉันอาจจะเป็นคนที่สมบูรณ์แบบเกินไป"
+                     },
+                     {
+                            word: "Inspiration",
+                            ipa: "ˌɪn.spɪˈreɪ.ʃən",
+                            definition: "แรงบันดาลใจ",
+                            example: "My father is my biggest inspiration for pursuing this degree.",
+                            example_th: "พ่อของฉันคือแรงบันดาลใจที่ยิ่งใหญ่ที่สุดในการเรียนต่อสาขานี้"
+                     },
+                     {
+                            word: "Motivation",
+                            ipa: "ˌmoʊ.tɪˈveɪ.ʃən",
+                            definition: "แรงจูงใจ",
+                            example: "My motivation comes from my desire to improve myself.",
+                            example_th: "แรงจูงใจของฉันมาจากความต้องการพัฒนาตัวเอง"
+                     },
+                     {
+                            word: "Goal",
+                            ipa: "ɡoʊl",
+                            definition: "เป้าหมาย",
+                            example: "My goal is to graduate and contribute to society.",
+                            example_th: "เป้าหมายของฉันคือเรียนจบและเป็นประโยชน์ต่อสังคม"
+                     },
+                     {
+                            word: "Strength",
+                            ipa: "streŋθ",
+                            definition: "จุดแข็ง",
+                            example: "One of my strengths is my ability to learn quickly.",
+                            example_th: "จุดแข็งของฉันคือการเรียนรู้ได้รวดเร็ว"
+                     },
+                     {
+                            word: "Weakness",
+                            ipa: "ˈwiːk.nəs",
+                            definition: "จุดอ่อน",
+                            example: "My weakness is overthinking, but I am improving.",
+                            example_th: "จุดอ่อนของฉันคือคิดมาก แต่กำลังปรับปรุงอยู่"
+                     },
+                     {
+                            word: "Experience",
+                            ipa: "ɪkˈspɪr.i.əns",
+                            definition: "ประสบการณ์",
+                            example: "This activity gave me valuable experience.",
+                            example_th: "กิจกรรมนี้ให้ประสบการณ์ที่มีค่ากับฉัน"
+                     },
+                     {
+                            word: "Interest",
+                            ipa: "ˈɪn.trɪst",
+                            definition: "ความสนใจ",
+                            example: "I have a strong interest in technology.",
+                            example_th: "ฉันมีความสนใจด้านเทคโนโลยีอย่างมาก"
+                     },
+                     {
+                            word: "Passion",
+                            ipa: "ˈpæʃ.ən",
+                            definition: "ความหลงใหล",
+                            example: "My passion for learning drives me forward.",
+                            example_th: "ความหลงใหลในการเรียนรู้ผลักดันฉันไปข้างหน้า"
+                     },
+                     {
+                            word: "Skill",
+                            ipa: "skɪl",
+                            definition: "ทักษะ",
+                            example: "This program will help me develop new skills.",
+                            example_th: "หลักสูตรนี้จะช่วยพัฒนาทักษะใหม่ๆ ให้ฉัน"
+                     },
+                     {
+                            word: "Ability",
+                            ipa: "əˈbɪl.ə.ti",
+                            definition: "ความสามารถ",
+                            example: "I believe I have the ability to succeed.",
+                            example_th: "ฉันเชื่อว่าฉันมีความสามารถที่จะประสบความสำเร็จ"
+                     },
+                     {
+                            word: "Responsibility",
+                            ipa: "rɪˌspɑːn.səˈbɪl.ə.ti",
+                            definition: "ความรับผิดชอบ",
+                            example: "I learned responsibility from being a team leader.",
+                            example_th: "ฉันได้เรียนรู้ความรับผิดชอบจากการเป็นหัวหน้าทีม"
+                     },
+
+                     {
+                            word: "Challenge",
+                            ipa: "ˈtʃæl.ɪndʒ",
+                            definition: "ความท้าทาย",
+                            example: "This challenge helped me grow.",
+                            example_th: "ความท้าทายนี้ช่วยให้ฉันเติบโต"
+                     },
+                     {
+                            word: "Improve",
+                            ipa: "ɪmˈpruːv",
+                            definition: "พัฒนา",
+                            example: "I always try to improve myself.",
+                            example_th: "ฉันพยายามพัฒนาตัวเองอยู่เสมอ"
+                     },
+                     {
+                            word: "Future",
+                            ipa: "ˈfjuː.tʃɚ",
+                            definition: "อนาคต",
+                            example: "This degree is important for my future.",
+                            example_th: "ปริญญานี้สำคัญต่ออนาคตของฉัน"
+                     },
+                     {
+                            word: "Contribution",
+                            ipa: "ˌkɑːn.trɪˈbjuː.ʃən",
+                            definition: "การมีส่วนร่วม, การสร้างประโยชน์",
+                            example: "I want to make a positive contribution to society.",
+                            example_th: "ฉันอยากสร้างประโยชน์ให้กับสังคม"
+                     },
+                     {
+                            word: "Commitment",
+                            ipa: "kəˈmɪt.mənt",
+                            definition: "ความมุ่งมั่น",
+                            example: "This field requires strong commitment.",
+                            example_th: "สาขานี้ต้องการความมุ่งมั่นสูง"
+                     },
+                     {
+                            word: "Opportunity",
+                            ipa: "ˌɑː.pɚˈtuː.nə.ti",
+                            definition: "โอกาส",
+                            example: "This university offers great opportunities.",
+                            example_th: "มหาวิทยาลัยนี้มอบโอกาสที่ดีมาก"
+                     },
+                     {
+                            word: "Decision",
+                            ipa: "dɪˈsɪʒ.ən",
+                            definition: "การตัดสินใจ",
+                            example: "Choosing this major was an important decision.",
+                            example_th: "การเลือกสาขานี้เป็นการตัดสินใจที่สำคัญ"
+                     },
+                     {
+                            word: "Confidence",
+                            ipa: "ˈkɑːn.fɪ.dəns",
+                            definition: "ความมั่นใจ",
+                            example: "This interview helps build my confidence.",
+                            example_th: "การสัมภาษณ์นี้ช่วยสร้างความมั่นใจให้ฉัน"
+                     },
+                     {
+                            word: "Dedication",
+                            ipa: "ˌded.ɪˈkeɪ.ʃən",
+                            definition: "ความทุ่มเท",
+                            example: "My dedication helps me overcome difficulties.",
+                            example_th: "ความทุ่มเทช่วยให้ฉันผ่านอุปสรรคไปได้"
+                     },
+                     {
+                            word: "Achievement",
+                            ipa: "əˈtʃiːv.mənt",
+                            definition: "ความสำเร็จ",
+                            example: "Graduating will be my greatest achievement.",
+                            example_th: "การเรียนจบจะเป็นความสำเร็จที่ยิ่งใหญ่ที่สุดของฉัน"
+                     },
+                     {
+                            word: "Motivation",
+                            ipa: "ˌmoʊ.tɪˈveɪ.ʃən",
+                            definition: "แรงจูงใจ",
+                            example: "My motivation comes from my desire to improve myself.",
+                            example_th: "แรงจูงใจของฉันมาจากความต้องการพัฒนาตัวเอง"
+                     },
+                     {
+                            word: "Goal",
+                            ipa: "ɡoʊl",
+                            definition: "เป้าหมาย",
+                            example: "My goal is to succeed in this field.",
+                            example_th: "เป้าหมายของฉันคือประสบความสำเร็จในสาขานี้"
+                     },
+                     {
+                            word: "Strength",
+                            ipa: "streŋθ",
+                            definition: "จุดแข็ง",
+                            example: "One of my strengths is my ability to learn quickly.",
+                            example_th: "จุดแข็งของฉันคือการเรียนรู้ได้รวดเร็ว"
+                     },
+                     {
+                            word: "Weakness",
+                            ipa: "ˈwiːk.nəs",
+                            definition: "จุดอ่อน",
+                            example: "My weakness is overthinking, but I am improving.",
+                            example_th: "จุดอ่อนของฉันคือคิดมาก แต่กำลังพัฒนาอยู่"
+                     },
+                     {
+                            word: "Experience",
+                            ipa: "ɪkˈspɪr.i.əns",
+                            definition: "ประสบการณ์",
+                            example: "This activity gave me valuable experience.",
+                            example_th: "กิจกรรมนี้ให้ประสบการณ์ที่มีค่าแก่ฉัน"
+                     },
+                     {
+                            word: "Interest",
+                            ipa: "ˈɪn.trɪst",
+                            definition: "ความสนใจ",
+                            example: "I have a strong interest in this major.",
+                            example_th: "ฉันมีความสนใจในสาขานี้อย่างมาก"
+                     },
+                     {
+                            word: "Passion",
+                            ipa: "ˈpæʃ.ən",
+                            definition: "ความหลงใหล",
+                            example: "My passion for learning motivates me.",
+                            example_th: "ความหลงใหลในการเรียนรู้เป็นแรงผลักดันของฉัน"
+                     },
+                     {
+                            word: "Skill",
+                            ipa: "skɪl",
+                            definition: "ทักษะ",
+                            example: "This program will help me develop important skills.",
+                            example_th: "หลักสูตรนี้จะช่วยพัฒนาทักษะที่สำคัญให้ฉัน"
+                     },
+                     {
+                            word: "Ability",
+                            ipa: "əˈbɪl.ə.ti",
+                            definition: "ความสามารถ",
+                            example: "I believe I have the ability to succeed.",
+                            example_th: "ฉันเชื่อว่าฉันมีความสามารถที่จะประสบความสำเร็จ"
+                     },
+                     {
+                            word: "Responsibility",
+                            ipa: "rɪˌspɑːn.səˈbɪl.ə.ti",
+                            definition: "ความรับผิดชอบ",
+                            example: "I learned responsibility from being a team leader.",
+                            example_th: "ฉันได้เรียนรู้ความรับผิดชอบจากการเป็นหัวหน้าทีม"
+                     },
+
+                     {
+                            word: "Challenge",
+                            ipa: "ˈtʃæl.ɪndʒ",
+                            definition: "ความท้าทาย",
+                            example: "This challenge helped me grow.",
+                            example_th: "ความท้าทายนี้ช่วยให้ฉันเติบโต"
+                     },
+                     {
+                            word: "Improvement",
+                            ipa: "ɪmˈpruːv.mənt",
+                            definition: "การพัฒนา",
+                            example: "I always focus on self-improvement.",
+                            example_th: "ฉันมุ่งเน้นการพัฒนาตัวเองอยู่เสมอ"
+                     },
+                     {
+                            word: "Future",
+                            ipa: "ˈfjuː.tʃɚ",
+                            definition: "อนาคต",
+                            example: "This degree is important for my future.",
+                            example_th: "ปริญญานี้สำคัญต่ออนาคตของฉัน"
+                     },
+                     {
+                            word: "Contribution",
+                            ipa: "ˌkɑːn.trɪˈbjuː.ʃən",
+                            definition: "การสร้างประโยชน์",
+                            example: "I want to make a positive contribution to society.",
+                            example_th: "ฉันอยากสร้างประโยชน์ให้กับสังคม"
+                     },
+                     {
+                            word: "Commitment",
+                            ipa: "kəˈmɪt.mənt",
+                            definition: "ความมุ่งมั่น",
+                            example: "This field requires strong commitment.",
+                            example_th: "สาขานี้ต้องการความมุ่งมั่นสูง"
+                     },
+                     {
+                            word: "Opportunity",
+                            ipa: "ˌɑː.pɚˈtuː.nə.ti",
+                            definition: "โอกาส",
+                            example: "This university provides many opportunities.",
+                            example_th: "มหาวิทยาลัยนี้มอบโอกาสมากมาย"
+                     },
+                     {
+                            word: "Decision",
+                            ipa: "dɪˈsɪʒ.ən",
+                            definition: "การตัดสินใจ",
+                            example: "Choosing this major was an important decision.",
+                            example_th: "การเลือกสาขานี้เป็นการตัดสินใจที่สำคัญ"
+                     },
+                     {
+                            word: "Confidence",
+                            ipa: "ˈkɑːn.fɪ.dəns",
+                            definition: "ความมั่นใจ",
+                            example: "This experience increased my confidence.",
+                            example_th: "ประสบการณ์นี้เพิ่มความมั่นใจให้ฉัน"
+                     },
+                     {
+                            word: "Dedication",
+                            ipa: "ˌded.ɪˈkeɪ.ʃən",
+                            definition: "ความทุ่มเท",
+                            example: "My dedication helps me overcome difficulties.",
+                            example_th: "ความทุ่มเทช่วยให้ฉันผ่านอุปสรรคไปได้"
+                     },
+                     {
+                            word: "Achievement",
+                            ipa: "əˈtʃiːv.mənt",
+                            definition: "ความสำเร็จ",
+                            example: "Graduating will be my greatest achievement.",
+                            example_th: "การเรียนจบจะเป็นความสำเร็จที่ยิ่งใหญ่ที่สุดของฉัน"
+                     },
+
+                     {
+                            word: "Leadership",
+                            ipa: "ˈliː.dɚ.ʃɪp",
+                            definition: "ความเป็นผู้นำ",
+                            example: "Leadership skills are important for teamwork.",
+                            example_th: "ทักษะความเป็นผู้นำสำคัญต่อการทำงานเป็นทีม"
+                     },
+                     {
+                            word: "Teamwork",
+                            ipa: "ˈtiːm.wɜːrk",
+                            definition: "การทำงานเป็นทีม",
+                            example: "I learned teamwork from group projects.",
+                            example_th: "ฉันได้เรียนรู้การทำงานเป็นทีมจากงานกลุ่ม"
+                     },
+                     {
+                            word: "Adaptability",
+                            ipa: "əˌdæp.təˈbɪl.ə.ti",
+                            definition: "ความสามารถในการปรับตัว",
+                            example: "Adaptability is important in a changing environment.",
+                            example_th: "การปรับตัวเป็นสิ่งสำคัญในสภาพแวดล้อมที่เปลี่ยนแปลง"
+                     },
+                     {
+                            word: "Responsibility",
+                            ipa: "rɪˌspɑːn.səˈbɪl.ə.ti",
+                            definition: "ความรับผิดชอบ",
+                            example: "I take responsibility for my actions.",
+                            example_th: "ฉันรับผิดชอบต่อการกระทำของตัวเอง"
+                     },
+                     {
+                            word: "Discipline",
+                            ipa: "ˈdɪs.ə.plɪn",
+                            definition: "วินัย",
+                            example: "Discipline helps me manage my time well.",
+                            example_th: "วินัยช่วยให้ฉันจัดการเวลาได้ดี"
+                     },
+                     {
+                            word: "Statistics",
+                            ipa: "stəˈtɪs.tɪks",
+                            definition: "สถิติ",
+                            example: "Statistics helps us understand and analyze data.",
+                            example_th: "สถิติช่วยให้เราเข้าใจและวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Data",
+                            ipa: "ˈdeɪ.tə",
+                            definition: "ข้อมูล",
+                            example: "Data is the foundation of analysis.",
+                            example_th: "ข้อมูลคือพื้นฐานของการวิเคราะห์"
+                     },
+                     {
+                            word: "Analysis",
+                            ipa: "əˈnæl.ə.sɪs",
+                            definition: "การวิเคราะห์",
+                            example: "I am interested in data analysis.",
+                            example_th: "ฉันสนใจการวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Dataset",
+                            ipa: "ˈdeɪ.tə.set",
+                            definition: "ชุดข้อมูล",
+                            example: "This dataset contains survey results.",
+                            example_th: "ชุดข้อมูลนี้ประกอบด้วยผลการสำรวจ"
+                     },
+                     {
+                            word: "Variable",
+                            ipa: "ˈver.i.ə.bəl",
+                            definition: "ตัวแปร",
+                            example: "Each variable represents different information.",
+                            example_th: "ตัวแปรแต่ละตัวแทนข้อมูลที่แตกต่างกัน"
+                     },
+                     {
+                            word: "Correlation",
+                            ipa: "ˌkɔːr.əˈleɪ.ʃən",
+                            definition: "ความสัมพันธ์ของข้อมูล",
+                            example: "I studied the correlation between variables.",
+                            example_th: "ฉันศึกษาความสัมพันธ์ระหว่างตัวแปร"
+                     },
+                     {
+                            word: "Probability",
+                            ipa: "ˌprɑː.bəˈbɪl.ə.ti",
+                            definition: "ความน่าจะเป็น",
+                            example: "Probability is an important concept in statistics.",
+                            example_th: "ความน่าจะเป็นเป็นแนวคิดสำคัญทางสถิติ"
+                     },
+                     {
+                            word: "Prediction",
+                            ipa: "prɪˈdɪk.ʃən",
+                            definition: "การพยากรณ์",
+                            example: "Data can be used for prediction.",
+                            example_th: "ข้อมูลสามารถใช้ในการพยากรณ์ได้"
+                     },
+                     {
+                            word: "Trend",
+                            ipa: "trend",
+                            definition: "แนวโน้ม",
+                            example: "The data shows an increasing trend.",
+                            example_th: "ข้อมูลแสดงแนวโน้มที่เพิ่มขึ้น"
+                     },
+                     {
+                            word: "Pattern",
+                            ipa: "ˈpæt.ɚn",
+                            definition: "รูปแบบ",
+                            example: "I enjoy finding patterns in data.",
+                            example_th: "ฉันชอบค้นหารูปแบบในข้อมูล"
+                     },
+
+                     {
+                            word: "Model",
+                            ipa: "ˈmɑː.dəl",
+                            definition: "แบบจำลอง",
+                            example: "This model helps explain the results.",
+                            example_th: "แบบจำลองนี้ช่วยอธิบายผลลัพธ์"
+                     },
+                     {
+                            word: "Accuracy",
+                            ipa: "ˈæk.jɚ.ə.si",
+                            definition: "ความแม่นยำ",
+                            example: "Accuracy is important in data analysis.",
+                            example_th: "ความแม่นยำมีความสำคัญในการวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Reliability",
+                            ipa: "rɪˌlaɪ.əˈbɪl.ə.ti",
+                            definition: "ความน่าเชื่อถือ",
+                            example: "The data source is reliable.",
+                            example_th: "แหล่งข้อมูลนี้มีความน่าเชื่อถือ"
+                     },
+                     {
+                            word: "Interpretation",
+                            ipa: "ɪnˌtɜːr.prɪˈteɪ.ʃən",
+                            definition: "การตีความข้อมูล",
+                            example: "Correct interpretation is essential.",
+                            example_th: "การตีความที่ถูกต้องเป็นสิ่งจำเป็น"
+                     },
+                     {
+                            word: "Visualization",
+                            ipa: "ˌvɪʒ.u.ə.laɪˈzeɪ.ʃən",
+                            definition: "การแสดงผลข้อมูล",
+                            example: "Visualization makes data easier to understand.",
+                            example_th: "การแสดงผลข้อมูลช่วยให้เข้าใจง่ายขึ้น"
+                     },
+                     {
+                            word: "Graph",
+                            ipa: "ɡræf",
+                            definition: "กราฟ",
+                            example: "Graphs help explain complex data.",
+                            example_th: "กราฟช่วยอธิบายข้อมูลที่ซับซ้อน"
+                     },
+                     {
+                            word: "Algorithm",
+                            ipa: "ˈæl.ɡə.rɪ.ðəm",
+                            definition: "ขั้นตอนวิธี",
+                            example: "This algorithm improves efficiency.",
+                            example_th: "ขั้นตอนวิธีนี้ช่วยเพิ่มประสิทธิภาพ"
+                     },
+                     {
+                            word: "Computation",
+                            ipa: "ˌkɑːm.pjuːˈteɪ.ʃən",
+                            definition: "การคำนวณ",
+                            example: "Computation is essential in data processing.",
+                            example_th: "การคำนวณจำเป็นต่อการประมวลผลข้อมูล"
+                     },
+                     {
+                            word: "Technology",
+                            ipa: "tekˈnɑː.lə.dʒi",
+                            definition: "เทคโนโลยี",
+                            example: "Technology supports data analysis.",
+                            example_th: "เทคโนโลยีสนับสนุนการวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Application",
+                            ipa: "ˌæp.lɪˈkeɪ.ʃən",
+                            definition: "การประยุกต์ใช้",
+                            example: "I want to apply statistics in real life.",
+                            example_th: "ฉันต้องการประยุกต์ใช้สถิติในชีวิตจริง"
+                     },
+
+                     {
+                            word: "Research",
+                            ipa: "rɪˈsɜːrtʃ",
+                            definition: "การวิจัย",
+                            example: "Research develops analytical thinking.",
+                            example_th: "การวิจัยช่วยพัฒนาความคิดเชิงวิเคราะห์"
+                     },
+                     {
+                            word: "Methodology",
+                            ipa: "ˌmeθ.əˈdɑː.lə.dʒi",
+                            definition: "ระเบียบวิธี",
+                            example: "This methodology is widely used.",
+                            example_th: "ระเบียบวิธีนี้ถูกใช้อย่างแพร่หลาย"
+                     },
+                     {
+                            word: "Experiment",
+                            ipa: "ɪkˈsper.ɪ.mənt",
+                            definition: "การทดลอง",
+                            example: "The experiment produced valuable data.",
+                            example_th: "การทดลองให้ข้อมูลที่มีค่า"
+                     },
+                     {
+                            word: "Measurement",
+                            ipa: "ˈmeʒ.ɚ.mənt",
+                            definition: "การวัดผล",
+                            example: "Accurate measurement is necessary.",
+                            example_th: "การวัดผลที่แม่นยำเป็นสิ่งจำเป็น"
+                     },
+                     {
+                            word: "Evaluation",
+                            ipa: "ɪˌvæl.juˈeɪ.ʃən",
+                            definition: "การประเมินผล",
+                            example: "Evaluation helps improve results.",
+                            example_th: "การประเมินผลช่วยปรับปรุงผลลัพธ์"
+                     },
+                     {
+                            word: "Problem-solving",
+                            ipa: "ˈprɑː.bləm ˌsɑːl.vɪŋ",
+                            definition: "การแก้ปัญหา",
+                            example: "Statistics improves problem-solving skills.",
+                            example_th: "สถิติช่วยพัฒนาทักษะการแก้ปัญหา"
+                     },
+                     {
+                            word: "Logic",
+                            ipa: "ˈlɑː.dʒɪk",
+                            definition: "ตรรกะ",
+                            example: "Logic is essential in data analysis.",
+                            example_th: "ตรรกะเป็นสิ่งสำคัญในการวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Systematic",
+                            ipa: "ˌsɪs.təˈmæt.ɪk",
+                            definition: "เป็นระบบ",
+                            example: "I prefer a systematic approach.",
+                            example_th: "ฉันชอบแนวทางที่เป็นระบบ"
+                     },
+                     {
+                            word: "Precision",
+                            ipa: "prɪˈsɪʒ.ən",
+                            definition: "ความละเอียดแม่นยำ",
+                            example: "Precision is required in statistics.",
+                            example_th: "ความละเอียดแม่นยำเป็นสิ่งจำเป็นในสถิติ"
+                     },
+                     {
+                            word: "Innovation",
+                            ipa: "ˌɪn.əˈveɪ.ʃən",
+                            definition: "นวัตกรรม",
+                            example: "Data analysis supports innovation.",
+                            example_th: "การวิเคราะห์ข้อมูลสนับสนุนนวัตกรรม"
+                     },
+                     {
+                            word: "Motivation",
+                            ipa: "ˌmoʊ.tɪˈveɪ.ʃən",
+                            definition: "แรงจูงใจ",
+                            example: "My motivation comes from my interest in technology and innovation.",
+                            example_th: "แรงจูงใจของฉันมาจากความสนใจด้านเทคโนโลยีและนวัตกรรม"
+                     },
+                     {
+                            word: "Goal",
+                            ipa: "ɡoʊl",
+                            definition: "เป้าหมาย",
+                            example: "My goal is to develop skills that are useful in the future.",
+                            example_th: "เป้าหมายของฉันคือพัฒนาทักษะที่ใช้ได้จริงในอนาคต"
+                     },
+                     {
+                            word: "Interest",
+                            ipa: "ˈɪn.trɪst",
+                            definition: "ความสนใจ",
+                            example: "I have a strong interest in this field.",
+                            example_th: "ฉันมีความสนใจในสาขานี้อย่างมาก"
+                     },
+                     {
+                            word: "Passion",
+                            ipa: "ˈpæʃ.ən",
+                            definition: "ความหลงใหล",
+                            example: "My passion drives me to keep learning.",
+                            example_th: "ความหลงใหลผลักดันให้ฉันเรียนรู้อย่างต่อเนื่อง"
+                     },
+                     {
+                            word: "Strength",
+                            ipa: "streŋθ",
+                            definition: "จุดแข็ง",
+                            example: "One of my strengths is analytical thinking.",
+                            example_th: "จุดแข็งของฉันคือการคิดเชิงวิเคราะห์"
+                     },
+                     {
+                            word: "Weakness",
+                            ipa: "ˈwiːk.nəs",
+                            definition: "จุดอ่อน",
+                            example: "My weakness is perfectionism, but I am learning to manage it.",
+                            example_th: "จุดอ่อนของฉันคือความสมบูรณ์แบบเกินไป แต่กำลังปรับปรุง"
+                     },
+                     {
+                            word: "Experience",
+                            ipa: "ɪkˈspɪr.i.əns",
+                            definition: "ประสบการณ์",
+                            example: "This activity gave me valuable experience.",
+                            example_th: "กิจกรรมนี้ให้ประสบการณ์ที่มีค่าแก่ฉัน"
+                     },
+                     {
+                            word: "Responsibility",
+                            ipa: "rɪˌspɑːn.səˈbɪl.ə.ti",
+                            definition: "ความรับผิดชอบ",
+                            example: "I learned responsibility from working in a team.",
+                            example_th: "ฉันเรียนรู้ความรับผิดชอบจากการทำงานเป็นทีม"
+                     },
+                     {
+                            word: "Commitment",
+                            ipa: "kəˈmɪt.mənt",
+                            definition: "ความมุ่งมั่น",
+                            example: "This major requires strong commitment.",
+                            example_th: "สาขานี้ต้องการความมุ่งมั่นสูง"
+                     },
+                     {
+                            word: "Confidence",
+                            ipa: "ˈkɑːn.fɪ.dəns",
+                            definition: "ความมั่นใจ",
+                            example: "This experience increased my confidence.",
+                            example_th: "ประสบการณ์นี้เพิ่มความมั่นใจให้ฉัน"
+                     },
+
+                     {
+                            word: "Teamwork",
+                            ipa: "ˈtiːm.wɜːrk",
+                            definition: "การทำงานเป็นทีม",
+                            example: "Teamwork is essential in university life.",
+                            example_th: "การทำงานเป็นทีมเป็นสิ่งสำคัญในชีวิตมหาวิทยาลัย"
+                     },
+                     {
+                            word: "Leadership",
+                            ipa: "ˈliː.dɚ.ʃɪp",
+                            definition: "ความเป็นผู้นำ",
+                            example: "Leadership helps guide the team effectively.",
+                            example_th: "ความเป็นผู้นำช่วยให้ทีมทำงานได้อย่างมีประสิทธิภาพ"
+                     },
+                     {
+                            word: "Adaptability",
+                            ipa: "əˌdæp.təˈbɪl.ə.ti",
+                            definition: "ความสามารถในการปรับตัว",
+                            example: "Adaptability is important in a fast-changing world.",
+                            example_th: "การปรับตัวเป็นสิ่งสำคัญในโลกที่เปลี่ยนแปลงรวดเร็ว"
+                     },
+                     {
+                            word: "Discipline",
+                            ipa: "ˈdɪs.ə.plɪn",
+                            definition: "วินัย",
+                            example: "Discipline helps me manage my time well.",
+                            example_th: "วินัยช่วยให้ฉันจัดการเวลาได้ดี"
+                     },
+                     {
+                            word: "Dedication",
+                            ipa: "ˌded.ɪˈkeɪ.ʃən",
+                            definition: "ความทุ่มเท",
+                            example: "My dedication keeps me focused on my goals.",
+                            example_th: "ความทุ่มเทช่วยให้ฉันจดจ่อกับเป้าหมาย"
+                     },
+                     {
+                            word: "Challenge",
+                            ipa: "ˈtʃæl.ɪndʒ",
+                            definition: "ความท้าทาย",
+                            example: "Challenges help me grow stronger.",
+                            example_th: "ความท้าทายช่วยให้ฉันเติบโตขึ้น"
+                     },
+                     {
+                            word: "Improvement",
+                            ipa: "ɪmˈpruːv.mənt",
+                            definition: "การพัฒนา",
+                            example: "I always focus on self-improvement.",
+                            example_th: "ฉันมุ่งเน้นการพัฒนาตัวเองอยู่เสมอ"
+                     },
+                     {
+                            word: "Opportunity",
+                            ipa: "ˌɑː.pɚˈtuː.nə.ti",
+                            definition: "โอกาส",
+                            example: "KMITL offers many learning opportunities.",
+                            example_th: "สจล. มอบโอกาสในการเรียนรู้มากมาย"
+                     },
+                     {
+                            word: "Future",
+                            ipa: "ˈfjuː.tʃɚ",
+                            definition: "อนาคต",
+                            example: "This program prepares me for the future.",
+                            example_th: "หลักสูตรนี้เตรียมฉันสำหรับอนาคต"
+                     },
+                     {
+                            word: "Contribution",
+                            ipa: "ˌkɑːn.trɪˈbjuː.ʃən",
+                            definition: "การสร้างประโยชน์",
+                            example: "I want to contribute to society through my knowledge.",
+                            example_th: "ฉันต้องการสร้างประโยชน์ให้สังคมด้วยความรู้ของฉัน"
+                     },
+
+                     {
+                            word: "Learning",
+                            ipa: "ˈlɜːr.nɪŋ",
+                            definition: "การเรียนรู้",
+                            example: "Learning never stops for me.",
+                            example_th: "การเรียนรู้ไม่เคยหยุดสำหรับฉัน"
+                     },
+                     {
+                            word: "Knowledge",
+                            ipa: "ˈnɑː.lɪdʒ",
+                            definition: "ความรู้",
+                            example: "This university provides strong academic knowledge.",
+                            example_th: "มหาวิทยาลัยนี้ให้ความรู้ทางวิชาการที่แข็งแกร่ง"
+                     },
+                     {
+                            word: "Skill",
+                            ipa: "skɪl",
+                            definition: "ทักษะ",
+                            example: "This program helps me develop practical skills.",
+                            example_th: "หลักสูตรนี้ช่วยพัฒนาทักษะที่ใช้ได้จริง"
+                     },
+                     {
+                            word: "Practice",
+                            ipa: "ˈpræk.tɪs",
+                            definition: "การฝึกฝน",
+                            example: "Practice helps me improve my abilities.",
+                            example_th: "การฝึกฝนช่วยพัฒนาความสามารถของฉัน"
+                     },
+                     {
+                            word: "Preparation",
+                            ipa: "ˌprep.əˈreɪ.ʃən",
+                            definition: "การเตรียมตัว",
+                            example: "Good preparation reduces stress.",
+                            example_th: "การเตรียมตัวที่ดีช่วยลดความกังวล"
+                     }
+
+              ]
+       }
+       ,
+       {
+              // --- หมวดที่ 3: คำศัพท์พื้นฐาน 1000 คำ (ของใหม่ ✨) ---
               id: 'common_1000',
               title: 'General 1000 Words ',
               description: 'ศัพท์พื้นฐานที่เจอบ่อยที่สุดในชีวิตประจำวัน',
@@ -1096,7 +1887,907 @@ export const vocabCategories = [
                             ipa: "piːs",
                             definition: "ชิ้น, ส่วน",
                             example: "Would you like a piece of cake?"
+                     },
+                     {
+                            word: "Hello",
+                            ipa: "həˈloʊ",
+                            definition: "สวัสดี",
+                            example: "Hello, nice to meet you.",
+                            example_th: "สวัสดี ยินดีที่ได้รู้จัก"
+                     },
+                     {
+                            word: "Name",
+                            ipa: "neɪm",
+                            definition: "ชื่อ",
+                            example: "My name is Anna.",
+                            example_th: "ชื่อของฉันคือแอนนา"
+                     },
+                     {
+                            word: "Friend",
+                            ipa: "frend",
+                            definition: "เพื่อน",
+                            example: "She is my best friend.",
+                            example_th: "เธอคือเพื่อนสนิทของฉัน"
+                     },
+                     {
+                            word: "Food",
+                            ipa: "fuːd",
+                            definition: "อาหาร",
+                            example: "This food is delicious.",
+                            example_th: "อาหารนี้อร่อยมาก"
+                     },
+                     {
+                            word: "Home",
+                            ipa: "hoʊm",
+                            definition: "บ้าน",
+                            example: "I stay at home today.",
+                            example_th: "วันนี้ฉันอยู่บ้าน"
+                     },
+                     {
+                            word: "School",
+                            ipa: "skuːl",
+                            definition: "โรงเรียน",
+                            example: "He goes to school every day.",
+                            example_th: "เขาไปโรงเรียนทุกวัน"
+                     },
+                     {
+                            word: "Happy",
+                            ipa: "ˈhæp.i",
+                            definition: "มีความสุข",
+                            example: "I feel happy today.",
+                            example_th: "วันนี้ฉันรู้สึกมีความสุข"
+                     },
+                     {
+                            word: "Water",
+                            ipa: "ˈwɔː.tər",
+                            definition: "น้ำ",
+                            example: "Please drink enough water.",
+                            example_th: "กรุณาดื่มน้ำให้เพียงพอ"
+                     },
+
+                     // ====================
+                     // A2 : Elementary (ระดับต้น)
+                     // ====================
+                     {
+                            word: "Work",
+                            ipa: "wɜːrk",
+                            definition: "ทำงาน, งาน",
+                            example: "I work in an office.",
+                            example_th: "ฉันทำงานในสำนักงาน"
+                     },
+                     {
+                            word: "Travel",
+                            ipa: "ˈtræv.əl",
+                            definition: "เดินทาง, ท่องเที่ยว",
+                            example: "I want to travel abroad.",
+                            example_th: "ฉันอยากไปเที่ยวต่างประเทศ"
+                     },
+                     {
+                            word: "Problem",
+                            ipa: "ˈprɑː.bləm",
+                            definition: "ปัญหา",
+                            example: "We need to solve this problem.",
+                            example_th: "เราต้องแก้ปัญหานี้"
+                     },
+                     {
+                            word: "Important",
+                            ipa: "ɪmˈpɔːr.tənt",
+                            definition: "สำคัญ",
+                            example: "This meeting is very important.",
+                            example_th: "การประชุมนี้สำคัญมาก"
+                     },
+                     {
+                            word: "Learn",
+                            ipa: "lɜːrn",
+                            definition: "เรียนรู้",
+                            example: "I want to learn English.",
+                            example_th: "ฉันอยากเรียนภาษาอังกฤษ"
+                     },
+                     {
+                            word: "Money",
+                            ipa: "ˈmʌn.i",
+                            definition: "เงิน",
+                            example: "He saves money every month.",
+                            example_th: "เขาเก็บเงินทุกเดือน"
+                     },
+                     {
+                            word: "Health",
+                            ipa: "helθ",
+                            definition: "สุขภาพ",
+                            example: "Good food is important for health.",
+                            example_th: "อาหารที่ดีสำคัญต่อสุขภาพ"
+                     },
+
+                     // ====================
+                     // B1 : Intermediate (ระดับกลาง)
+                     // ====================
+                     {
+                            word: "Experience",
+                            ipa: "ɪkˈspɪr.i.əns",
+                            definition: "ประสบการณ์",
+                            example: "This job gives me valuable experience.",
+                            example_th: "งานนี้ให้ประสบการณ์ที่มีค่าแก่ฉัน"
+                     },
+                     {
+                            word: "Improve",
+                            ipa: "ɪmˈpruːv",
+                            definition: "พัฒนา, ปรับปรุง",
+                            example: "She wants to improve her skills.",
+                            example_th: "เธออยากพัฒนาทักษะของตัวเอง"
+                     },
+                     {
+                            word: "Decision",
+                            ipa: "dɪˈsɪʒ.ən",
+                            definition: "การตัดสินใจ",
+                            example: "It was a difficult decision.",
+                            example_th: "มันเป็นการตัดสินใจที่ยาก"
+                     },
+                     {
+                            word: "Support",
+                            ipa: "səˈpɔːrt",
+                            definition: "สนับสนุน",
+                            example: "My family supports me.",
+                            example_th: "ครอบครัวของฉันสนับสนุนฉัน"
+                     },
+                     {
+                            word: "Opportunity",
+                            ipa: "ˌɑː.pɚˈtuː.nə.ti",
+                            definition: "โอกาส",
+                            example: "This is a great opportunity.",
+                            example_th: "นี่คือโอกาสที่ดีมาก"
+                     },
+                     {
+                            word: "Confidence",
+                            ipa: "ˈkɑːn.fɪ.dəns",
+                            definition: "ความมั่นใจ",
+                            example: "Speaking English builds confidence.",
+                            example_th: "การพูดภาษาอังกฤษช่วยสร้างความมั่นใจ"
+                     },
+
+                     // ====================
+                     // B2 : Upper-Intermediate (ระดับกลางสูง)
+                     // ====================
+                     {
+                            word: "Analyze",
+                            ipa: "ˈæn.ə.laɪz",
+                            definition: "วิเคราะห์",
+                            example: "We need to analyze the data.",
+                            example_th: "เราต้องวิเคราะห์ข้อมูล"
+                     },
+                     {
+                            word: "Communicate",
+                            ipa: "kəˈmjuː.nɪ.keɪt",
+                            definition: "สื่อสาร",
+                            example: "Good leaders communicate clearly.",
+                            example_th: "ผู้นำที่ดีสื่อสารได้อย่างชัดเจน"
+                     },
+                     {
+                            word: "Presentation",
+                            ipa: "ˌprez.ənˈteɪ.ʃən",
+                            definition: "การนำเสนอ",
+                            example: "She gave a professional presentation.",
+                            example_th: "เธอทำการนำเสนอได้อย่างมืออาชีพ"
+                     },
+                     {
+                            word: "Strategy",
+                            ipa: "ˈstræt.ə.dʒi",
+                            definition: "กลยุทธ์",
+                            example: "We need a better strategy.",
+                            example_th: "เราต้องมีกลยุทธ์ที่ดีกว่านี้"
+                     },
+                     {
+                            word: "Responsibility",
+                            ipa: "rɪˌspɑːn.səˈbɪl.ə.ti",
+                            definition: "ความรับผิดชอบ",
+                            example: "This role has a lot of responsibility.",
+                            example_th: "ตำแหน่งนี้มีความรับผิดชอบสูง"
+                     },
+                     {
+                            word: "Perspective",
+                            ipa: "pərˈspek.tɪv",
+                            definition: "มุมมอง, ทัศนคติ",
+                            example: "Try to see the issue from a different perspective.",
+                            example_th: "ลองมองปัญหาจากมุมมองที่ต่างออกไป"
+                     },
+                     {
+                            word: "Approach",
+                            ipa: "əˈproʊtʃ",
+                            definition: "แนวทาง, วิธีการเข้าหา",
+                            example: "We need a new approach to solve this problem.",
+                            example_th: "เราต้องการแนวทางใหม่ในการแก้ปัญหานี้"
+                     },
+                     {
+                            word: "Benefit",
+                            ipa: "ˈben.ɪ.fɪt",
+                            definition: "ประโยชน์",
+                            example: "Exercise has many health benefits.",
+                            example_th: "การออกกำลังกายมีประโยชน์ต่อสุขภาพมาก"
+                     },
+                     {
+                            word: "Challenge",
+                            ipa: "ˈtʃæl.ɪndʒ",
+                            definition: "ความท้าทาย",
+                            example: "Learning a new language is a challenge.",
+                            example_th: "การเรียนภาษาใหม่เป็นความท้าทาย"
+                     },
+                     {
+                            word: "Develop",
+                            ipa: "dɪˈvel.əp",
+                            definition: "พัฒนา",
+                            example: "He wants to develop his leadership skills.",
+                            example_th: "เขาต้องการพัฒนาทักษะความเป็นผู้นำ"
+                     },
+                     {
+                            word: "Effective",
+                            ipa: "ɪˈfek.tɪv",
+                            definition: "มีประสิทธิภาพ",
+                            example: "This method is very effective.",
+                            example_th: "วิธีนี้มีประสิทธิภาพมาก"
+                     },
+                     {
+                            word: "Focus",
+                            ipa: "ˈfoʊ.kəs",
+                            definition: "จดจ่อ, มุ่งเน้น",
+                            example: "Please focus on your work.",
+                            example_th: "กรุณาจดจ่อกับงานของคุณ"
+                     },
+                     {
+                            word: "Goal",
+                            ipa: "ɡoʊl",
+                            definition: "เป้าหมาย",
+                            example: "Her goal is to study abroad.",
+                            example_th: "เป้าหมายของเธอคือการไปเรียนต่อต่างประเทศ"
+                     },
+                     {
+                            word: "Impact",
+                            ipa: "ˈɪm.pækt",
+                            definition: "ผลกระทบ",
+                            example: "The decision had a big impact on the team.",
+                            example_th: "การตัดสินใจนั้นส่งผลกระทบต่อทีมอย่างมาก"
+                     },
+                     {
+                            word: "Knowledge",
+                            ipa: "ˈnɑː.lɪdʒ",
+                            definition: "ความรู้",
+                            example: "Knowledge is power.",
+                            example_th: "ความรู้คือพลัง"
+                     },
+                     {
+                            word: "Leadership",
+                            ipa: "ˈliː.dɚ.ʃɪp",
+                            definition: "ความเป็นผู้นำ",
+                            example: "Good leadership motivates people.",
+                            example_th: "ความเป็นผู้นำที่ดีช่วยสร้างแรงจูงใจให้คน"
+                     },
+                     {
+                            word: "Motivate",
+                            ipa: "ˈmoʊ.tɪ.veɪt",
+                            definition: "กระตุ้น, สร้างแรงจูงใจ",
+                            example: "The teacher motivates students to learn.",
+                            example_th: "ครูกระตุ้นให้นักเรียนอยากเรียนรู้"
+                     },
+                     {
+                            word: "Objective",
+                            ipa: "əbˈdʒek.tɪv",
+                            definition: "วัตถุประสงค์",
+                            example: "The main objective is customer satisfaction.",
+                            example_th: "วัตถุประสงค์หลักคือความพึงพอใจของลูกค้า"
+                     },
+                     {
+                            word: "Prioritize",
+                            ipa: "praɪˈɔːr.ə.taɪz",
+                            definition: "จัดลำดับความสำคัญ",
+                            example: "You should prioritize your tasks.",
+                            example_th: "คุณควรจัดลำดับความสำคัญของงาน"
+                     },
+                     {
+                            word: "Resource",
+                            ipa: "ˈriː.sɔːrs",
+                            definition: "ทรัพยากร",
+                            example: "Time is a valuable resource.",
+                            example_th: "เวลาเป็นทรัพยากรที่มีค่า"
+                     },
+                     {
+                            word: "Solution",
+                            ipa: "səˈluː.ʃən",
+                            definition: "ทางแก้ไข",
+                            example: "We found a solution to the issue.",
+                            example_th: "เราพบทางแก้ไขปัญหาแล้ว"
+                     },
+                     {
+                            word: "Teamwork",
+                            ipa: "ˈtiːm.wɜːrk",
+                            definition: "การทำงานเป็นทีม",
+                            example: "Teamwork leads to better results.",
+                            example_th: "การทำงานเป็นทีมทำให้ได้ผลลัพธ์ที่ดีกว่า"
+                     },
+                     {
+                            word: "Understand",
+                            ipa: "ˌʌn.dərˈstænd",
+                            definition: "เข้าใจ",
+                            example: "I understand your point.",
+                            example_th: "ฉันเข้าใจมุมมองของคุณ"
+                     },
+                     {
+                            word: "Value",
+                            ipa: "ˈvæl.juː",
+                            definition: "คุณค่า, ให้คุณค่า",
+                            example: "We value honest communication.",
+                            example_th: "เราให้คุณค่ากับการสื่อสารอย่างตรงไปตรงมา"
+                     },
+                     {
+                            word: "Workload",
+                            ipa: "ˈwɜːrk.loʊd",
+                            definition: "ปริมาณงาน",
+                            example: "His workload increased this month.",
+                            example_th: "ปริมาณงานของเขาเพิ่มขึ้นในเดือนนี้"
+                     },
+                     {
+                            word: "Adapt",
+                            ipa: "əˈdæpt",
+                            definition: "ปรับตัว",
+                            example: "You need to adapt to change.",
+                            example_th: "คุณต้องปรับตัวกับการเปลี่ยนแปลง"
+                     },
+                     {
+                            word: "Balance",
+                            ipa: "ˈbæl.əns",
+                            definition: "ความสมดุล",
+                            example: "She maintains a good work-life balance.",
+                            example_th: "เธอรักษาสมดุลระหว่างงานและชีวิตได้ดี"
+                     },
+                     {
+                            word: "Commitment",
+                            ipa: "kəˈmɪt.mənt",
+                            definition: "ความมุ่งมั่น",
+                            example: "Success requires commitment.",
+                            example_th: "ความสำเร็จต้องอาศัยความมุ่งมั่น"
+                     },
+                     {
+                            word: "Efficiency",
+                            ipa: "ɪˈfɪʃ.ən.si",
+                            definition: "ประสิทธิภาพ",
+                            example: "Automation improves efficiency.",
+                            example_th: "ระบบอัตโนมัติช่วยเพิ่มประสิทธิภาพ"
+                     },
+                     {
+                            word: "Feedback",
+                            ipa: "ˈfiːd.bæk",
+                            definition: "ข้อเสนอแนะ",
+                            example: "Your feedback is very helpful.",
+                            example_th: "ข้อเสนอแนะของคุณมีประโยชน์มาก"
+                     },
+                     {
+                            word: "Growth",
+                            ipa: "ɡroʊθ",
+                            definition: "การเติบโต",
+                            example: "Personal growth is important.",
+                            example_th: "การเติบโตของตัวเองเป็นสิ่งสำคัญ"
+                     },
+                     {
+                            word: "Insight",
+                            ipa: "ˈɪn.saɪt",
+                            definition: "ความเข้าใจเชิงลึก",
+                            example: "The report provides useful insight.",
+                            example_th: "รายงานนี้ให้ความเข้าใจเชิงลึกที่เป็นประโยชน์"
+                     },
+                     {
+                            word: "Negotiate",
+                            ipa: "nɪˈɡoʊ.ʃi.eɪt",
+                            definition: "เจรจาต่อรอง",
+                            example: "They negotiate the contract terms.",
+                            example_th: "พวกเขาเจรจาเงื่อนไขของสัญญา"
+                     },
+                     {
+                            word: "Outcome",
+                            ipa: "ˈaʊt.kʌm",
+                            definition: "ผลลัพธ์",
+                            example: "The outcome was better than expected.",
+                            example_th: "ผลลัพธ์ดีกว่าที่คาดไว้"
+                     },
+                     {
+                            word: "Productivity",
+                            ipa: "ˌproʊ.dʌkˈtɪv.ə.ti",
+                            definition: "ประสิทธิผลในการทำงาน",
+                            example: "Better tools increase productivity.",
+                            example_th: "เครื่องมือที่ดีขึ้นช่วยเพิ่มประสิทธิผลในการทำงาน"
+                     },
+                     {
+                            word: "Agree",
+                            ipa: "əˈɡriː",
+                            definition: "เห็นด้วย",
+                            example: "I agree with your idea.",
+                            example_th: "ฉันเห็นด้วยกับความคิดของคุณ"
+                     },
+                     {
+                            word: "Answer",
+                            ipa: "ˈæn.sɚ",
+                            definition: "คำตอบ, ตอบ",
+                            example: "Please answer the question.",
+                            example_th: "กรุณาตอบคำถาม"
+                     },
+                     {
+                            word: "Ask",
+                            ipa: "æsk",
+                            definition: "ถาม",
+                            example: "You can ask me anything.",
+                            example_th: "คุณสามารถถามฉันได้ทุกอย่าง"
+                     },
+                     {
+                            word: "Busy",
+                            ipa: "ˈbɪz.i",
+                            definition: "ยุ่ง",
+                            example: "I am busy right now.",
+                            example_th: "ตอนนี้ฉันยุ่งอยู่"
+                     },
+                     {
+                            word: "Call",
+                            ipa: "kɔːl",
+                            definition: "โทร, เรียก",
+                            example: "I will call you later.",
+                            example_th: "ฉันจะโทรหาคุณทีหลัง"
+                     },
+                     {
+                            word: "Care",
+                            ipa: "ker",
+                            definition: "ใส่ใจ, ดูแล",
+                            example: "She cares about her family.",
+                            example_th: "เธอใส่ใจครอบครัวของเธอ"
+                     },
+                     {
+                            word: "Choose",
+                            ipa: "tʃuːz",
+                            definition: "เลือก",
+                            example: "You can choose any option.",
+                            example_th: "คุณสามารถเลือกตัวเลือกใดก็ได้"
+                     },
+                     {
+                            word: "Close",
+                            ipa: "kloʊz",
+                            definition: "ปิด, ใกล้",
+                            example: "Please close the door.",
+                            example_th: "กรุณาปิดประตู"
+                     },
+                     {
+                            word: "Come",
+                            ipa: "kʌm",
+                            definition: "มา",
+                            example: "Can you come here for a moment?",
+                            example_th: "คุณมาที่นี่สักครู่ได้ไหม"
+                     },
+                     {
+                            word: "Continue",
+                            ipa: "kənˈtɪn.juː",
+                            definition: "ทำต่อ, ดำเนินต่อ",
+                            example: "Let’s continue our discussion.",
+                            example_th: "มาคุยกันต่อเถอะ"
+                     },
+
+                     {
+                            word: "Deal",
+                            ipa: "diːl",
+                            definition: "จัดการ, ข้อตกลง",
+                            example: "We need to deal with this issue.",
+                            example_th: "เราต้องจัดการกับปัญหานี้"
+                     },
+                     {
+                            word: "Decide",
+                            ipa: "dɪˈsaɪd",
+                            definition: "ตัดสินใจ",
+                            example: "She decided to stay home.",
+                            example_th: "เธอตัดสินใจอยู่บ้าน"
+                     },
+                     {
+                            word: "Depend",
+                            ipa: "dɪˈpend",
+                            definition: "ขึ้นอยู่กับ",
+                            example: "It depends on the situation.",
+                            example_th: "มันขึ้นอยู่กับสถานการณ์"
+                     },
+                     {
+                            word: "Enjoy",
+                            ipa: "ɪnˈdʒɔɪ",
+                            definition: "เพลิดเพลิน, สนุก",
+                            example: "I really enjoy this movie.",
+                            example_th: "ฉันสนุกกับหนังเรื่องนี้มาก"
+                     },
+                     {
+                            word: "Explain",
+                            ipa: "ɪkˈspleɪn",
+                            definition: "อธิบาย",
+                            example: "Can you explain it again?",
+                            example_th: "คุณอธิบายอีกครั้งได้ไหม"
+                     },
+                     {
+                            word: "Feel",
+                            ipa: "fiːl",
+                            definition: "รู้สึก",
+                            example: "I feel tired today.",
+                            example_th: "วันนี้ฉันรู้สึกเหนื่อย"
+                     },
+                     {
+                            word: "Fix",
+                            ipa: "fɪks",
+                            definition: "แก้ไข, ซ่อม",
+                            example: "I need to fix this problem.",
+                            example_th: "ฉันต้องแก้ปัญหานี้"
+                     },
+                     {
+                            word: "Forget",
+                            ipa: "fərˈɡet",
+                            definition: "ลืม",
+                            example: "Don’t forget to call me.",
+                            example_th: "อย่าลืมโทรหาฉัน"
+                     },
+                     {
+                            word: "Guess",
+                            ipa: "ɡes",
+                            definition: "เดา",
+                            example: "Let me guess the answer.",
+                            example_th: "ขอฉันเดาคำตอบ"
+                     },
+                     {
+                            word: "Happen",
+                            ipa: "ˈhæp.ən",
+                            definition: "เกิดขึ้น",
+                            example: "What happened yesterday?",
+                            example_th: "เมื่อวานเกิดอะไรขึ้น"
+                     },
+
+                     {
+                            word: "Help",
+                            ipa: "help",
+                            definition: "ช่วยเหลือ",
+                            example: "Can you help me?",
+                            example_th: "คุณช่วยฉันได้ไหม"
+                     },
+                     {
+                            word: "Hope",
+                            ipa: "hoʊp",
+                            definition: "หวัง",
+                            example: "I hope everything goes well.",
+                            example_th: "ฉันหวังว่าทุกอย่างจะเป็นไปด้วยดี"
+                     },
+                     {
+                            word: "Imagine",
+                            ipa: "ɪˈmædʒ.ɪn",
+                            definition: "จินตนาการ",
+                            example: "Imagine living abroad.",
+                            example_th: "ลองจินตนาการถึงการใช้ชีวิตต่างประเทศ"
+                     },
+                     {
+                            word: "Invite",
+                            ipa: "ɪnˈvaɪt",
+                            definition: "เชิญ",
+                            example: "They invited me to the party.",
+                            example_th: "พวกเขาเชิญฉันไปงานปาร์ตี้"
+                     },
+                     {
+                            word: "Join",
+                            ipa: "dʒɔɪn",
+                            definition: "เข้าร่วม",
+                            example: "Would you like to join us?",
+                            example_th: "คุณอยากเข้าร่วมกับเราไหม"
+                     },
+                     {
+                            word: "Listen",
+                            ipa: "ˈlɪs.ən",
+                            definition: "ฟัง",
+                            example: "Please listen carefully.",
+                            example_th: "กรุณาฟังอย่างตั้งใจ"
+                     },
+                     {
+                            word: "Look",
+                            ipa: "lʊk",
+                            definition: "มอง, ดู",
+                            example: "Look at this picture.",
+                            example_th: "ดูรูปนี้สิ"
+                     },
+                     {
+                            word: "Mean",
+                            ipa: "miːn",
+                            definition: "หมายถึง",
+                            example: "What do you mean?",
+                            example_th: "คุณหมายถึงอะไร"
+                     },
+                     {
+                            word: "Miss",
+                            ipa: "mɪs",
+                            definition: "คิดถึง, พลาด",
+                            example: "I miss my friends.",
+                            example_th: "ฉันคิดถึงเพื่อนๆ"
+                     },
+                     {
+                            word: "Need",
+                            ipa: "niːd",
+                            definition: "ต้องการ",
+                            example: "I need some help.",
+                            example_th: "ฉันต้องการความช่วยเหลือ"
+                     },
+
+                     {
+                            word: "Offer",
+                            ipa: "ˈɔː.fɚ",
+                            definition: "เสนอ",
+                            example: "He offered to help me.",
+                            example_th: "เขาเสนอที่จะช่วยฉัน"
+                     },
+                     {
+                            word: "Open",
+                            ipa: "ˈoʊ.pən",
+                            definition: "เปิด",
+                            example: "Please open the window.",
+                            example_th: "กรุณาเปิดหน้าต่าง"
+                     },
+                     {
+                            word: "Plan",
+                            ipa: "plæn",
+                            definition: "วางแผน",
+                            example: "Let’s plan our weekend.",
+                            example_th: "มาวางแผนวันหยุดกัน"
+                     },
+                     {
+                            word: "Prefer",
+                            ipa: "prɪˈfɜːr",
+                            definition: "ชอบมากกว่า",
+                            example: "I prefer coffee over tea.",
+                            example_th: "ฉันชอบกาแฟมากกว่าชา"
+                     },
+                     {
+                            word: "Promise",
+                            ipa: "ˈprɑː.mɪs",
+                            definition: "สัญญา",
+                            example: "I promise to be there.",
+                            example_th: "ฉันสัญญาว่าจะไป"
+                     },
+                     {
+                            word: "Realize",
+                            ipa: "ˈrɪə.laɪz",
+                            definition: "ตระหนัก",
+                            example: "I realized my mistake.",
+                            example_th: "ฉันตระหนักถึงความผิดพลาดของตัวเอง"
+                     },
+                     {
+                            word: "Relax",
+                            ipa: "rɪˈlæks",
+                            definition: "ผ่อนคลาย",
+                            example: "Try to relax after work.",
+                            example_th: "ลองผ่อนคลายหลังเลิกงาน"
+                     },
+                     {
+                            word: "Remember",
+                            ipa: "rɪˈmem.bɚ",
+                            definition: "จำได้",
+                            example: "I remember your name.",
+                            example_th: "ฉันจำชื่อคุณได้"
+                     },
+                     {
+                            word: "Share",
+                            ipa: "ʃer",
+                            definition: "แบ่งปัน",
+                            example: "She shared her experience.",
+                            example_th: "เธอแบ่งปันประสบการณ์ของเธอ"
+                     },
+                     {
+                            word: "Trust",
+                            ipa: "trʌst",
+                            definition: "เชื่อใจ",
+                            example: "I trust your judgment.",
+                            example_th: "ฉันเชื่อการตัดสินใจของคุณ"
+                     },
+                     {
+                            word: "Actually",
+                            ipa: "ˈæk.tʃu.ə.li",
+                            definition: "จริงๆ แล้ว",
+                            example: "Actually, I don’t mind.",
+                            example_th: "จริงๆ แล้ว ฉันไม่ถือ"
+                     },
+                     {
+                            word: "Alright",
+                            ipa: "ɔːlˈraɪt",
+                            definition: "โอเค, ได้เลย",
+                            example: "Alright, let’s do it.",
+                            example_th: "โอเค งั้นทำเลย"
+                     },
+                     {
+                            word: "Anyway",
+                            ipa: "ˈen.i.weɪ",
+                            definition: "เอาเป็นว่า, อย่างไรก็ตาม",
+                            example: "Anyway, let’s get started.",
+                            example_th: "เอาเป็นว่า มาเริ่มกันเถอะ"
+                     },
+                     {
+                            word: "Around",
+                            ipa: "əˈraʊnd",
+                            definition: "แถวๆ, ประมาณ",
+                            example: "I’ll be around 6 pm.",
+                            example_th: "ฉันจะมาประมาณหกโมง"
+                     },
+                     {
+                            word: "Awesome",
+                            ipa: "ˈɔː.səm",
+                            definition: "เยี่ยมมาก",
+                            example: "That sounds awesome!",
+                            example_th: "ฟังดูเยี่ยมมาก!"
+                     },
+                     {
+                            word: "Basically",
+                            ipa: "ˈbeɪ.sɪk.li",
+                            definition: "โดยพื้นฐานแล้ว",
+                            example: "Basically, it’s very simple.",
+                            example_th: "โดยพื้นฐานแล้ว มันง่ายมาก"
+                     },
+                     {
+                            word: "By the way",
+                            ipa: "baɪ ðə weɪ",
+                            definition: "ว่าแต่, อ้อ แล้วก็",
+                            example: "By the way, did you see her?",
+                            example_th: "ว่าแต่ คุณเห็นเธอไหม"
+                     },
+                     {
+                            word: "Cool",
+                            ipa: "kuːl",
+                            definition: "เจ๋ง, โอเค",
+                            example: "Cool, see you later.",
+                            example_th: "โอเค แล้วเจอกัน"
+                     },
+                     {
+                            word: "Deal",
+                            ipa: "diːl",
+                            definition: "ตกลง",
+                            example: "Deal! Let’s meet tomorrow.",
+                            example_th: "ตกลง เจอกันพรุ่งนี้"
+                     },
+                     {
+                            word: "Exactly",
+                            ipa: "ɪɡˈzækt.li",
+                            definition: "ถูกต้องเลย",
+                            example: "Exactly what I was thinking.",
+                            example_th: "ตรงกับที่ฉันคิดเลย"
+                     },
+
+                     {
+                            word: "Fair",
+                            ipa: "fer",
+                            definition: "ยุติธรรม, สมเหตุสมผล",
+                            example: "That’s fair.",
+                            example_th: "ฟังดูสมเหตุสมผล"
+                     },
+                     {
+                            word: "Figure",
+                            ipa: "ˈfɪɡ.jɚ",
+                            definition: "คิดได้, คาดเดา",
+                            example: "I’ll figure it out.",
+                            example_th: "ฉันจะหาทางออกเอง"
+                     },
+                     {
+                            word: "For sure",
+                            ipa: "fɔːr ʃʊr",
+                            definition: "แน่นอน",
+                            example: "Yeah, for sure.",
+                            example_th: "แน่นอนอยู่แล้ว"
+                     },
+                     {
+                            word: "Hang out",
+                            ipa: "hæŋ aʊt",
+                            definition: "ไปเที่ยว, ใช้เวลาด้วยกัน",
+                            example: "Let’s hang out this weekend.",
+                            example_th: "ไปเที่ยวด้วยกันสุดสัปดาห์นี้ไหม"
+                     },
+                     {
+                            word: "Honestly",
+                            ipa: "ˈɑː.nɪst.li",
+                            definition: "พูดตรงๆ",
+                            example: "Honestly, I don’t like it.",
+                            example_th: "พูดตรงๆ ฉันไม่ชอบ"
+                     },
+                     {
+                            word: "Kind of",
+                            ipa: "kaɪnd əv",
+                            definition: "ประมาณว่า, ค่อนข้าง",
+                            example: "I’m kind of tired.",
+                            example_th: "ฉันค่อนข้างเหนื่อย"
+                     },
+                     {
+                            word: "Let me know",
+                            ipa: "let mi noʊ",
+                            definition: "บอกฉันด้วย",
+                            example: "Let me know if you need help.",
+                            example_th: "บอกฉันด้วยถ้าคุณต้องการความช่วยเหลือ"
+                     },
+                     {
+                            word: "Make sense",
+                            ipa: "meɪk sens",
+                            definition: "สมเหตุสมผล",
+                            example: "That makes sense.",
+                            example_th: "ฟังดูสมเหตุสมผล"
+                     },
+                     {
+                            word: "Maybe",
+                            ipa: "ˈmeɪ.bi",
+                            definition: "บางที",
+                            example: "Maybe we can try later.",
+                            example_th: "บางทีเราลองใหม่ทีหลังได้"
+                     },
+                     {
+                            word: "No worries",
+                            ipa: "noʊ ˈwɜːr.iz",
+                            definition: "ไม่เป็นไร",
+                            example: "No worries, it’s fine.",
+                            example_th: "ไม่เป็นไร โอเคเลย"
+                     },
+
+                     {
+                            word: "Of course",
+                            ipa: "əv kɔːrs",
+                            definition: "แน่นอน",
+                            example: "Of course, I can help.",
+                            example_th: "แน่นอน ฉันช่วยได้"
+                     },
+                     {
+                            word: "Pretty",
+                            ipa: "ˈprɪt.i",
+                            definition: "ค่อนข้าง",
+                            example: "It’s pretty good.",
+                            example_th: "มันค่อนข้างดีเลย"
+                     },
+                     {
+                            word: "Probably",
+                            ipa: "ˈprɑː.bə.bli",
+                            definition: "น่าจะ",
+                            example: "I’ll probably stay home.",
+                            example_th: "ฉันน่าจะอยู่บ้าน"
+                     },
+                     {
+                            word: "Right now",
+                            ipa: "raɪt naʊ",
+                            definition: "ตอนนี้",
+                            example: "I’m busy right now.",
+                            example_th: "ตอนนี้ฉันยุ่งอยู่"
+                     },
+                     {
+                            word: "Sounds good",
+                            ipa: "saʊndz ɡʊd",
+                            definition: "ฟังดูดี",
+                            example: "Sounds good to me.",
+                            example_th: "ฟังดูดีสำหรับฉัน"
+                     },
+                     {
+                            word: "Take care",
+                            ipa: "teɪk ker",
+                            definition: "ดูแลตัวเองด้วย",
+                            example: "Take care, see you soon.",
+                            example_th: "ดูแลตัวเองด้วย แล้วเจอกัน"
+                     },
+                     {
+                            word: "That’s fine",
+                            ipa: "ðæts faɪn",
+                            definition: "ไม่เป็นไร",
+                            example: "That’s fine with me.",
+                            example_th: "สำหรับฉันไม่เป็นไร"
+                     },
+                     {
+                            word: "To be honest",
+                            ipa: "tə bi ˈɑː.nɪst",
+                            definition: "พูดตามตรง",
+                            example: "To be honest, I was confused.",
+                            example_th: "พูดตามตรง ฉันงง"
+                     },
+                     {
+                            word: "Totally",
+                            ipa: "ˈtoʊ.t̬əl.i",
+                            definition: "เห็นด้วยสุดๆ",
+                            example: "Totally agree with you.",
+                            example_th: "เห็นด้วยกับคุณสุดๆ"
+                     },
+                     {
+                            word: "What’s up",
+                            ipa: "wʌts ʌp",
+                            definition: "เป็นไงบ้าง",
+                            example: "Hey, what’s up?",
+                            example_th: "เฮ้ เป็นไงบ้าง"
                      }
+
               ]
        }
 ];

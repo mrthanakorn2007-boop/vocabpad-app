@@ -2788,6 +2788,365 @@ export const vocabCategories = [
                             example_th: "เฮ้ เป็นไงบ้าง"
                      }
 
+              ],
+       },
+
+       // --- Oxford 3000 Vocabs ---
+       {
+              id: 'oxford_3000',
+              title: 'Oxford 3000 Essential Words',
+              description: 'คำศัพท์ที่สำคัญที่สุด 3000 คำจาก Oxford พื้นฐานสำหรับผู้เรียนภาษาอังกฤษ',
+              words: [
+                     {
+                            word: "Abandon",
+                            ipa: "əˈbæn.dən",
+                            definition: "ละทิ้ง, ทอดทิ้ง",
+                            example: "They had to abandon their car in the snow.",
+                            example_th: "พวกเขาต้องละทิ้งรถของพวกเขาไว้ในหิมะ"
+                     },
+                     {
+                            word: "Ability",
+                            ipa: "əˈbɪl.ə.ti",
+                            definition: "ความสามารถ",
+                            example: "She has the ability to speak five languages.",
+                            example_th: "เธอมีความสามารถพูดได้ห้าภาษา"
+                     },
+                     {
+                            word: "Absent",
+                            ipa: "ˈæb.sənt",
+                            definition: "ขาด, ไม่อยู่",
+                            example: "He was absent from school yesterday.",
+                            example_th: "เขาขาดเรียนเมื่อวานนี้"
+                     },
+                     {
+                            word: "Absolute",
+                            ipa: "ˈæb.sə.luːt",
+                            definition: "สมบูรณ์, เด็ดขาด",
+                            example: "I have absolute confidence in her ability.",
+                            example_th: "ฉันมีความเชื่อมั่นอย่างเต็มที่ในความสามารถของเธอ"
+                     },
+                     {
+                            word: "Academic",
+                            ipa: "ˌæk.əˈdem.ɪk",
+                            definition: "เกี่ยวกับการศึกษา, ทางวิชาการ",
+                            example: "His academic performance is excellent.",
+                            example_th: "ผลการเรียนของเขาดีเลิศ"
+                     },
+                     {
+                            word: "Accept",
+                            ipa: "əkˈsept",
+                            definition: "ยอมรับ, รับ",
+                            example: "I accept your apology.",
+                            example_th: "ฉันยอมรับคำขอโทษของคุณ"
+                     },
+                     {
+                            word: "Access",
+                            ipa: "ˈæk.ses",
+                            definition: "การเข้าถึง, ทางเข้า",
+                            example: "Students have access to the library 24/7.",
+                            example_th: "นักเรียนสามารถเข้าใช้ห้องสมุดได้ตลอด 24 ชั่วโมง"
+                     },
+                     {
+                            word: "Accident",
+                            ipa: "ˈæk.sɪ.dənt",
+                            definition: "อุบัติเหตุ",
+                            example: "There was a car accident on the highway.",
+                            example_th: "มีอุบัติเหตุรถยนต์บนทางด่วน"
+                     },
+                     {
+                            word: "Accompany",
+                            ipa: "əˈkʌm.pə.ni",
+                            definition: "ไปด้วย, ติดตาม",
+                            example: "Would you like me to accompany you?",
+                            example_th: "คุณต้องการให้ฉันไปด้วยไหม"
+                     },
+                     {
+                            word: "Accomplish",
+                            ipa: "əˈkɑːm.plɪʃ",
+                            definition: "สำเร็จ, ทำสำเร็จ",
+                            example: "She accomplished her goal of running a marathon.",
+                            example_th: "เธอสำเร็จเป้าหมายในการวิ่งมาราธอน"
+                     },
+                     {
+                            word: "Account",
+                            ipa: "əˈkaʊnt",
+                            definition: "บัญชี, รายงาน, คำอธิบาย",
+                            example: "I need to open a bank account.",
+                            example_th: "ฉันต้องเปิดบัญชีธนาคาร"
+                     },
+                     {
+                            word: "Accurate",
+                            ipa: "ˈæk.jər.ət",
+                            definition: "ถูกต้อง, แม่นยำ",
+                            example: "Make sure your measurements are accurate.",
+                            example_th: "ตรวจสอบให้แน่ใจว่าการวัดของคุณถูกต้อง"
+                     },
+                     {
+                            word: "Achieve",
+                            ipa: "əˈtʃiːv",
+                            definition: "บรรลุ, ประสบความสำเร็จ",
+                            example: "He worked hard to achieve his dreams.",
+                            example_th: "เขาทำงานหนักเพื่อบรรลุความฝัน"
+                     },
+                     {
+                            word: "Acknowledge",
+                            ipa: "əkˈnɑː.lɪdʒ",
+                            definition: "ยอมรับ, รับทราบ",
+                            example: "She acknowledged her mistake.",
+                            example_th: "เธอยอมรับความผิดของตัวเอง"
+                     },
+                     {
+                            word: "Acquire",
+                            ipa: "əˈkwaɪər",
+                            definition: "ได้มา, ได้รับ",
+                            example: "He acquired new skills through training.",
+                            example_th: "เขาได้รับทักษะใหม่จากการฝึกอบรม"
+                     },
+                     {
+                            word: "Active",
+                            ipa: "ˈæk.tɪv",
+                            definition: "กระฉับกระเฉง, คล่องแคล่ว",
+                            example: "She leads an active lifestyle.",
+                            example_th: "เธอมีวิถีชีวิตที่กระฉับกระเฉง"
+                     },
+                     {
+                            word: "Actual",
+                            ipa: "ˈæk.tʃu.əl",
+                            definition: "จริง, แท้จริง",
+                            example: "The actual cost was higher than expected.",
+                            example_th: "ต้นทุนที่แท้จริงสูงกว่าที่คาดไว้"
+                     },
+                     {
+                            word: "Adapt",
+                            ipa: "əˈdæpt",
+                            definition: "ปรับตัว, ดัดแปลง",
+                            example: "Animals adapt to their environment.",
+                            example_th: "สัตว์ปรับตัวให้เข้ากับสภาพแวดล้อม"
+                     },
+                     {
+                            word: "Adequate",
+                            ipa: "ˈæd.ɪ.kwət",
+                            definition: "เพียงพอ",
+                            example: "We need adequate funding for this project.",
+                            example_th: "เราต้องการเงินทุนที่เพียงพอสำหรับโครงการนี้"
+                     },
+                     {
+                            word: "Adjust",
+                            ipa: "əˈdʒʌst",
+                            definition: "ปรับแต่ง, ปรับ",
+                            example: "You can adjust the seat to your comfort.",
+                            example_th: "คุณสามารถปรับที่นั่งให้สะดวกได้"
+                     },
+                     {
+                            word: "Admire",
+                            ipa: "ədˈmaɪər",
+                            definition: "ชื่นชม, ยกย่อง",
+                            example: "I admire her courage and determination.",
+                            example_th: "ฉันชื่นชมความกล้าหาญและความมุ่งมั่นของเธอ"
+                     },
+                     {
+                            word: "Admit",
+                            ipa: "ədˈmɪt",
+                            definition: "ยอมรับ, อนุญาตให้เข้า",
+                            example: "He admitted that he was wrong.",
+                            example_th: "เขายอมรับว่าเขาผิด"
+                     },
+                     {
+                            word: "Adopt",
+                            ipa: "əˈdɑːpt",
+                            definition: "รับเลี้ยงบุตรบุญธรรม, นำมาใช้",
+                            example: "They decided to adopt a child.",
+                            example_th: "พวกเขาตัดสินใจรับเลี้ยงเด็ก"
+                     },
+                     {
+                            word: "Advance",
+                            ipa: "ədˈvæns",
+                            definition: "ก้าวหน้า, เลื่อนหน้า",
+                            example: "Technology continues to advance rapidly.",
+                            example_th: "เทคโนโลยียังคงก้าวหน้าอย่างรวดเร็ว"
+                     },
+                     {
+                            word: "Advantage",
+                            ipa: "ədˈvæn.tɪdʒ",
+                            definition: "ข้อได้เปรียบ, ประโยชน์",
+                            example: "Being bilingual is a big advantage.",
+                            example_th: "การพูดได้สองภาษาเป็นข้อได้เปรียบอย่างมาก"
+                     },
+                     {
+                            word: "Adventure",
+                            ipa: "ədˈven.tʃər",
+                            definition: "การผจญภัย",
+                            example: "They went on an adventure in the jungle.",
+                            example_th: "พวกเขาออกผจญภัยในป่า"
+                     },
+                     {
+                            word: "Advertise",
+                            ipa: "ˈæd.vər.taɪz",
+                            definition: "โฆษณา",
+                            example: "They advertise their products on TV.",
+                            example_th: "พวกเขาโฆษณาสินค้าของพวกเขาทางทีวี"
+                     },
+                     {
+                            word: "Advice",
+                            ipa: "ədˈvaɪs",
+                            definition: "คำแนะนำ",
+                            example: "Can you give me some advice?",
+                            example_th: "คุณให้คำแนะนำฉันหน่อยได้ไหม"
+                     },
+                     {
+                            word: "Advise",
+                            ipa: "ədˈvaɪz",
+                            definition: "แนะนำ, ให้คำปรึกษา",
+                            example: "I would advise you to study harder.",
+                            example_th: "ฉันจะแนะนำให้คุณเรียนหนักขึ้น"
+                     },
+                     {
+                            word: "Affair",
+                            ipa: "əˈfer",
+                            definition: "เรื่อง, กิจการ",
+                            example: "This is a private affair.",
+                            example_th: "นี่เป็นเรื่องส่วนตัว"
+                     },
+                     {
+                            word: "Affect",
+                            ipa: "əˈfekt",
+                            definition: "มีผลกระทบต่อ",
+                            example: "The weather affects my mood.",
+                            example_th: "สภาพอากาศมีผลต่ออารมณ์ของฉัน"
+                     },
+                     {
+                            word: "Afford",
+                            ipa: "əˈfɔːrd",
+                            definition: "มีความสามารถทางการเงิน, จ่ายได้",
+                            example: "I can't afford a new car right now.",
+                            example_th: "ตอนนี้ฉันซื้อรถใหม่ไม่ได้"
+                     },
+                     {
+                            word: "Afraid",
+                            ipa: "əˈfreɪd",
+                            definition: "กลัว",
+                            example: "Don't be afraid of making mistakes.",
+                            example_th: "อย่ากลัวที่จะทำผิดพลาด"
+                     },
+                     {
+                            word: "Agent",
+                            ipa: "ˈeɪ.dʒənt",
+                            definition: "ตัวแทน, เอเจนต์",
+                            example: "She works as a real estate agent.",
+                            example_th: "เธอทำงานเป็นเอเจนต์อสังหาริมทรัพย์"
+                     },
+                     {
+                            word: "Aggressive",
+                            ipa: "əˈɡres.ɪv",
+                            definition: "ก้าวร้าว, ดุร้าย",
+                            example: "The dog became aggressive when threatened.",
+                            example_th: "สุนัขตัวนั้นก้าวร้าวขึ้นเมื่อถูกคุกคาม"
+                     },
+                     {
+                            word: "Agree",
+                            ipa: "əˈɡriː",
+                            definition: "เห็นด้วย, ตกลง",
+                            example: "I agree with your opinion.",
+                            example_th: "ฉันเห็นด้วยกับความคิดเห็นของคุณ"
+                     },
+                     {
+                            word: "Agreement",
+                            ipa: "əˈɡriː.mənt",
+                            definition: "ข้อตกลง, สัญญา",
+                            example: "They signed an agreement yesterday.",
+                            example_th: "พวกเขาลงนามในข้อตกลงเมื่อวานนี้"
+                     },
+                     {
+                            word: "Ahead",
+                            ipa: "əˈhed",
+                            definition: "ข้างหน้า",
+                            example: "Look straight ahead.",
+                            example_th: "มองตรงไปข้างหน้า"
+                     },
+                     {
+                            word: "Aid",
+                            ipa: "eɪd",
+                            definition: "ช่วยเหลือ, ความช่วยเหลือ",
+                            example: "They provided aid to the disaster victims.",
+                            example_th: "พวกเขาให้ความช่วยเหลือแก่ผู้ประสบภัย"
+                     },
+                     {
+                            word: "Aim",
+                            ipa: "eɪm",
+                            definition: "เล็ง, มุ่งหมาย, เป้าหมาย",
+                            example: "Our aim is to improve customer service.",
+                            example_th: "เป้าหมายของเราคือการปรับปรุงการบริการลูกค้า"
+                     },
+                     {
+                            word: "Alarm",
+                            ipa: "əˈlɑːrm",
+                            definition: "สัญญาณเตือน, ความตื่นตระหนก",
+                            example: "The fire alarm went off at midnight.",
+                            example_th: "สัญญาณเตือนไfire ดังขึ้นตอนเที่ยงคืน"
+                     },
+                     {
+                            word: "Alert",
+                            ipa: "əˈlɜːrt",
+                            definition: "เตือน, ตื่นตัว",
+                            example: "Stay alert while driving at night.",
+                            example_th: "ตื่นตัวขณะขับรถตอนกลางคืน"
+                     },
+                     {
+                            word: "Alien",
+                            ipa: "ˈeɪ.li.ən",
+                            definition: "มนุษย์ต่างดาว, คนต่างด้าว",
+                            example: "The movie is about aliens from outer space.",
+                            example_th: "หนังเรื่องนี้เกี่ยวกับมนุษย์ต่างดาวจากอวกาศ"
+                     },
+                     {
+                            word: "Alike",
+                            ipa: "əˈlaɪk",
+                            definition: "เหมือนกัน, คล้ายกัน",
+                            example: "The twins look alike.",
+                            example_th: "ฝาแฝดดูเหมือนกัน"
+                     },
+                     {
+                            word: "Alive",
+                            ipa: "əˈlaɪv",
+                            definition: "มีชีวิต, มีชีวิตชีวา",
+                            example: "She's lucky to be alive after the accident.",
+                            example_th: "เธอโชคดีที่ยังมีชีวิตอยู่หลังจากอุบัติเหตุ"
+                     },
+                     {
+                            word: "Allow",
+                            ipa: "əˈlaʊ",
+                            definition: "อนุญาต, ยอมให้",
+                            example: "Smoking is not allowed in this building.",
+                            example_th: "ไม่อนุญาตให้สูบบุหรี่ในอาคารนี้"
+                     },
+                     {
+                            word: "Almost",
+                            ipa: "ˈɔːl.moʊst",
+                            definition: "เกือบ, เกือบจะ",
+                            example: "It's almost time to go.",
+                            example_th: "เกือบถึงเวลาไปแล้ว"
+                     },
+                     {
+                            word: "Alone",
+                            ipa: "əˈloʊn",
+                            definition: "โดดเดี่ยว, คนเดียว",
+                            example: "She lives alone in a small apartment.",
+                            example_th: "เธออยู่คนเดียวในอพาร์ตเมนต์เล็กๆ"
+                     },
+                     {
+                            word: "Already",
+                            ipa: "ɔːlˈred.i",
+                            definition: "แล้ว, เรียบร้อยแล้ว",
+                            example: "I've already finished my homework.",
+                            example_th: "ฉันทำการบ้านเสร็จแล้ว"
+                     },
+                     {
+                            word: "Alternative",
+                            ipa: "ɔːlˈtɜːr.nə.tɪv",
+                            definition: "ทางเลือก, สิ่งที่เลือกแทน",
+                            example: "We need to find an alternative solution.",
+                            example_th: "เราต้องหาทางเลือกอื่น"
+                     }
               ]
        }
 ];

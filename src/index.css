@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔒 บังคับตั้งค่าหน้าจอ iPad */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* ห้ามเลื่อน Scroll */
+  background-color: #fdfbf7;
+  /* บังคับสีพื้นหลังเป็นสีครีม */
+
+  /* ⚠️ คำสั่งสำคัญ: ห้าม Browser รับรู้การสัมผัสเพื่อเลื่อนจอ */
+  touch-action: none;
+  -webkit-user-select: none;
+  /* ห้ามเลือกข้อความ */
+  user-select: none;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* บังคับ Canvas ให้รับ Event การเขียนเท่านั้น */
+canvas {
+  touch-action: none;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  touch-action: manipulation !important;
+  /* ให้ย่อขยายหรือเลื่อนได้เฉพาะใน input */
+}

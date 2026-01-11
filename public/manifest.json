@@ -1,0 +1,16 @@
+{
+       "name": "Eng Practice",
+       "short_name": "EngPad",
+       "start_url": ".",
+       "display": "standalone",
+       "background_color": "#ffffff",
+       "theme_color": "#ffffff",
+       "orientation": "any",
+       "icons": [
+              {
+                     "src": "icon-192.png",
+                     "sizes": "192x192",
+                     "type": "image/png"
+              }
+       ]
+}

@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { Trash2, Eraser, PenTool, Highlighter } from 'lucide-react';
+import { Trash2, Eraser, PenTool, Highlighter, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ✅ รับ prop ชื่อ autoClearTrigger เข้ามา (ตัวนี้จะเป็นตัวบอกให้ล้าง)
-export default function CanvasPad({ autoClearTrigger }) {
+export default function CanvasPad({ autoClearTrigger, onPrevWord, onNextWord }) {
        const canvasRef = useRef(null);
        const containerRef = useRef(null);
        const [tool, setTool] = useState('pen');
@@ -155,6 +155,9 @@ export default function CanvasPad({ autoClearTrigger }) {
                             <button onClick={() => setTool('eraser')} className={`p-3 rounded-xl transition ${tool === 'eraser' ? 'bg-gray-600 text-white shadow-md' : 'text-gray-500 hover:bg-gray-100'}`}><Eraser size={20} /></button>
                             <div className="h-px w-full md:w-px md:h-full bg-gray-200 mx-1"></div>
                             <button onClick={clearCanvas} className="p-3 rounded-xl text-red-500 hover:bg-red-50 transition"><Trash2 size={20} /></button>
+                            <div className="h-px w-full md:w-px md:h-full bg-gray-200 mx-1"></div>
+                            <button onClick={() => onPrevWord && onPrevWord()} title="คำก่อนหน้า" className="p-2 rounded-xl text-gray-600 hover:bg-gray-100 transition"><ChevronLeft size={18} /></button>
+                            <button onClick={() => onNextWord && onNextWord()} title="คำถัดไป" className="p-2 rounded-xl text-gray-600 hover:bg-gray-100 transition"><ChevronRight size={18} /></button>
                      </div>
 
                      <canvas

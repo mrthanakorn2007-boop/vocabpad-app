@@ -319,7 +319,7 @@ export default function VocabGame({ onBackToLanding }) {
                             <section className="flex-1 h-full min-h-0 bg-white rounded-2xl md:rounded-3xl shadow-sm border border-gray-200 overflow-hidden relative flex flex-col transition-all duration-300">
                                    {inputMode === 'handwriting' && (
                                           <>
-                                                 <div className="flex-1 relative bg-white animate-in fade-in"><CanvasPad autoClearTrigger={currentWordData ? currentWordData.word : ''} /></div>
+                                                 <div className="flex-1 relative bg-white animate-in fade-in"><CanvasPad autoClearTrigger={currentWordData ? currentWordData.word : ''} onPrevWord={handlePrev} onNextWord={handleNext} /></div>
                                                  <div className="flex-none p-3 md:p-4 bg-gray-50 border-t border-gray-200 z-10">
                                                         <div className="flex flex-col gap-2">
                                                                <label className="text-[10px] md:text-xs font-bold text-gray-400 uppercase flex items-center gap-2 ml-1"><PenTool size={12} /> Handwriting</label>

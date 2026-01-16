@@ -11652,5 +11652,1462 @@ export const vocabCategories = [
                             "example_th": "เขาศึกษาวิชาการหมักดอง"
                      }
               ]
-       }
+       },
+       {
+              id: 'Grammar Based',
+              title: 'Grammar Based Words',
+              description: 'Action Verbs, Adjectives & Emotions, Connecting Words คัดมาจาก Oxford 3000',
+              words: [
+                     // Words for Oxford,
+                     {
+                            "word": "Analyze",
+                            "ipa": "ˈænəlaɪz",
+                            "definition": "วิเคราะห์ (Action Verb)",
+                            "example": "We need to analyze the results.",
+                            "example_th": "เราจำเป็นต้องวิเคราะห์ผลลัพธ์"
+                     },
+                     {
+                            "word": "Argue",
+                            "ipa": "ˈɑːrɡjuː",
+                            "definition": "โต้แย้ง, ให้เหตุผล (Action Verb)",
+                            "example": "He argued that the plan was too expensive.",
+                            "example_th": "เขาโต้แย้งว่าแผนการนี้แพงเกินไป"
+                     },
+                     {
+                            "word": "Compare",
+                            "ipa": "kəmˈper",
+                            "definition": "เปรียบเทียบ (Action Verb)",
+                            "example": "Compare the two products.",
+                            "example_th": "เปรียบเทียบสินค้าสองชิ้นนี้"
+                     },
+                     {
+                            "word": "Convince",
+                            "ipa": "kənˈvɪns",
+                            "definition": "โน้มน้าวใจ (Action Verb)",
+                            "example": "I tried to convince him to stay.",
+                            "example_th": "ฉันพยายามโน้มน้าวให้เขาอยู่ต่อ"
+                     },
+                     {
+                            "word": "Describe",
+                            "ipa": "dɪˈskraɪb",
+                            "definition": "บรรยาย, อธิบายลักษณะ (Action Verb)",
+                            "example": "Can you describe the thief?",
+                            "example_th": "คุณช่วยบรรยายลักษณะของขโมยได้ไหม"
+                     },
+                     {
+                            "word": "Encourage",
+                            "ipa": "ɪnˈkɜːrɪdʒ",
+                            "definition": "ส่งเสริม, ให้กำลังใจ (Action Verb)",
+                            "example": "My parents encourage me to study.",
+                            "example_th": "พ่อแม่ส่งเสริมให้ฉันเรียนหนังสือ"
+                     },
+                     {
+                            "word": "Establish",
+                            "ipa": "ɪˈstæblɪʃ",
+                            "definition": "ก่อตั้ง, สร้างรากฐาน (Action Verb)",
+                            "example": "The company was established in 2000.",
+                            "example_th": "บริษัทนี้ก่อตั้งขึ้นในปี 2000"
+                     },
+                     {
+                            "word": "Improve",
+                            "ipa": "ɪmˈpruːv",
+                            "definition": "ปรับปรุง, ทำให้ดีขึ้น (Action Verb)",
+                            "example": "He wants to improve his English.",
+                            "example_th": "เขาต้องการพัฒนาภาษาอังกฤษของเขา"
+                     },
+                     {
+                            "word": "Involve",
+                            "ipa": "ɪnˈvɑːlv",
+                            "definition": "เกี่ยวข้อง, ครอบคลุมถึง (Action Verb)",
+                            "example": "The project involves many people.",
+                            "example_th": "โครงการนี้เกี่ยวข้องกับผู้คนมากมาย"
+                     },
+                     {
+                            "word": "Organize",
+                            "ipa": "ˈɔːrɡənaɪz",
+                            "definition": "จัดระเบียบ, จัดงาน (Action Verb)",
+                            "example": "She helped organize the party.",
+                            "example_th": "เธอช่วยจัดงานปาร์ตี้"
+                     },
+                     {
+                            "word": "Anxious",
+                            "ipa": "ˈæŋkʃəs",
+                            "definition": "วิตกกังวล (Adjective & Emotion)",
+                            "example": "I feel anxious about the exam.",
+                            "example_th": "ฉันรู้สึกกังวลเกี่ยวกับการสอบ"
+                     },
+                     {
+                            "word": "Available",
+                            "ipa": "əˈveɪləbl",
+                            "definition": "ว่าง, มีอยู่ให้ใช้ (Adjective)",
+                            "example": "Is this seat available?",
+                            "example_th": "ที่นั่งตรงนี้ว่างไหม"
+                     },
+                     {
+                            "word": "Capable",
+                            "ipa": "ˈkeɪpəbl",
+                            "definition": "มีความสามารถ (Adjective)",
+                            "example": "She is capable of doing it.",
+                            "example_th": "เธอมีความสามารถที่จะทำมันได้"
+                     },
+                     {
+                            "word": "Complicated",
+                            "ipa": "ˈkɑːmplɪkeɪtɪd",
+                            "definition": "ซับซ้อน (Adjective)",
+                            "example": "The situation is complicated.",
+                            "example_th": "สถานการณ์มันซับซ้อน"
+                     },
+                     {
+                            "word": "Confident",
+                            "ipa": "ˈkɑːnfɪdənt",
+                            "definition": "มั่นใจ (Adjective & Emotion)",
+                            "example": "Be confident in yourself.",
+                            "example_th": "จงมั่นใจในตัวเอง"
+                     },
+                     {
+                            "word": "Disappointed",
+                            "ipa": "ˌdɪsəˈpɔɪntɪd",
+                            "definition": "ผิดหวัง (Adjective & Emotion)",
+                            "example": "I was disappointed with the result.",
+                            "example_th": "ฉันผิดหวังกับผลลัพธ์ที่ออกมา"
+                     },
+                     {
+                            "word": "Efficient",
+                            "ipa": "ɪˈfɪʃnt",
+                            "definition": "มีประสิทธิภาพ (Adjective)",
+                            "example": "He is an efficient worker.",
+                            "example_th": "เขาเป็นคนทำงานที่มีประสิทธิภาพ"
+                     },
+                     {
+                            "word": "Essential",
+                            "ipa": "ɪˈsenʃl",
+                            "definition": "จำเป็น, เป็นสิ่งสำคัญ (Adjective)",
+                            "example": "Water is essential for life.",
+                            "example_th": "น้ำเป็นสิ่งจำเป็นต่อชีวิต"
+                     },
+                     {
+                            "word": "Exhausted",
+                            "ipa": "ɪɡˈzɔːstɪd",
+                            "definition": "เหนื่อยล้ามาก (Adjective & Emotion)",
+                            "example": "I was exhausted after the run.",
+                            "example_th": "ฉันเหนื่อยล้ามากหลังจากวิ่ง"
+                     },
+                     {
+                            "word": "Significant",
+                            "ipa": "sɪɡˈnɪfɪkənt",
+                            "definition": "สำคัญ, มีนัยสำคัญ (Adjective)",
+                            "example": "A significant change.",
+                            "example_th": "การเปลี่ยนแปลงที่มีนัยสำคัญ"
+                     },
+                     {
+                            "word": "Although",
+                            "ipa": "ɔːlˈðoʊ",
+                            "definition": "แม้ว่า (Connecting Word)",
+                            "example": "Although it rained, we went out.",
+                            "example_th": "แม้ว่าฝนจะตก เราก็ออกไปข้างนอก"
+                     },
+                     {
+                            "word": "Consequently",
+                            "ipa": "ˈkɑːnsɪkwentli",
+                            "definition": "ดังนั้น, เป็นผลให้ (Connecting Word)",
+                            "example": "He missed the bus; consequently, he was late.",
+                            "example_th": "เขาตกรถเมล์ เป็นผลให้เขามาสาย"
+                     },
+                     {
+                            "word": "Despite",
+                            "ipa": "dɪˈspaɪt",
+                            "definition": "ทั้งๆ ที่ (Connecting Word)",
+                            "example": "Despite the rain, we played football.",
+                            "example_th": "ทั้งๆ ที่ฝนตก เราก็ยังเล่นฟุตบอล"
+                     },
+                     {
+                            "word": "Furthermore",
+                            "ipa": "ˌfɜːrðərˈmɔːr",
+                            "definition": "ยิ่งไปกว่านั้น (Connecting Word)",
+                            "example": "It is cheap. Furthermore, it is good.",
+                            "example_th": "มันราคาถูก และยิ่งไปกว่านั้น มันยังดีอีกด้วย"
+                     },
+                     {
+                            "word": "However",
+                            "ipa": "haʊˈevər",
+                            "definition": "อย่างไรก็ตาม (Connecting Word)",
+                            "example": "I like him; however, I don't trust him.",
+                            "example_th": "ฉันชอบเขานะ แต่รอย่างไรก็ตาม ฉันไม่ไว้ใจเขา"
+                     },
+                     {
+                            "word": "Instead",
+                            "ipa": "ɪnˈsted",
+                            "definition": "แทนที่ (Connecting Word)",
+                            "example": "Drink water instead of soda.",
+                            "example_th": "ดื่มน้ำเปล่าแทนน้ำอัดลม"
+                     },
+                     {
+                            "word": "Moreover",
+                            "ipa": "mɔːrˈoʊvər",
+                            "definition": "ยิ่งไปกว่านั้น (ทางการ) (Connecting Word)",
+                            "example": "She is smart. Moreover, she is kind.",
+                            "example_th": "เธอฉลาด และยิ่งไปกว่านั้น เธอยังใจดี"
+                     },
+                     {
+                            "word": "Otherwise",
+                            "ipa": "ˈʌðərwaɪz",
+                            "definition": "มิฉะนั้น (Connecting Word)",
+                            "example": "Hurry up, otherwise you'll be late.",
+                            "example_th": "รีบหน่อย มิฉะนั้นคุณจะสาย"
+                     },
+                     {
+                            "word": "Therefore",
+                            "ipa": "ˈðerfɔːr",
+                            "definition": "ดังนั้น (ทางการ) (Connecting Word)",
+                            "example": "I think, therefore I am.",
+                            "example_th": "ฉันคิด ดังนั้นฉันจึงมีอยู่"
+                     },
+                     {
+                            "word": "Whereas",
+                            "ipa": "ˌwerˈæz",
+                            "definition": "ในขณะที่ (เปรียบเทียบ) (Connecting Word)",
+                            "example": "He likes coffee, whereas she likes tea.",
+                            "example_th": "เขาชอบกาแฟ ในขณะที่เธอชอบชา"
+                     },
+                     ,
+                     {
+                            "word": "Achieve",
+                            "ipa": "əˈtʃiːv",
+                            "definition": "บรรลุ, ทำสำเร็จ (Action Verb)",
+                            "example": "He worked hard to achieve his goal.",
+                            "example_th": "เขาทำงานหนักเพื่อบรรลุเป้าหมาย"
+                     },
+                     {
+                            "word": "Affect",
+                            "ipa": "əˈfekt",
+                            "definition": "ส่งผลกระทบ (Action Verb)",
+                            "example": "Pollution affects our health.",
+                            "example_th": "มลพิษส่งผลกระทบต่อสุขภาพของเรา"
+                     },
+                     {
+                            "word": "Allow",
+                            "ipa": "əˈlaʊ",
+                            "definition": "อนุญาต (Action Verb)",
+                            "example": "They allowed us to enter.",
+                            "example_th": "พวกเขาอนุญาตให้เราเข้าไป"
+                     },
+                     {
+                            "word": "Appear",
+                            "ipa": "əˈpɪr",
+                            "definition": "ปรากฏ, ดูเหมือนว่า (Action Verb)",
+                            "example": "He appears to be tired.",
+                            "example_th": "เขาดูเหมือนว่าจะเหนื่อย"
+                     },
+                     {
+                            "word": "Apply",
+                            "ipa": "əˈplaɪ",
+                            "definition": "ประยุกต์ใช้, สมัคร (Action Verb)",
+                            "example": "Apply this rule to every case.",
+                            "example_th": "ประยุกต์ใช้กฎนี้กับทุกกรณี"
+                     },
+                     {
+                            "word": "Avoid",
+                            "ipa": "əˈvɔɪd",
+                            "definition": "หลีกเลี่ยง (Action Verb)",
+                            "example": "Try to avoid junk food.",
+                            "example_th": "พยายามหลีกเลี่ยงอาหารขยะ"
+                     },
+                     {
+                            "word": "Consider",
+                            "ipa": "kənˈsɪdər",
+                            "definition": "พิจารณา (Action Verb)",
+                            "example": "Please consider my proposal.",
+                            "example_th": "โปรดพิจารณาข้อเสนอของฉัน"
+                     },
+                     {
+                            "word": "Contain",
+                            "ipa": "kənˈteɪn",
+                            "definition": "บรรจุ, ประกอบด้วย (Action Verb)",
+                            "example": "This box contains books.",
+                            "example_th": "กล่องนี้บรรจุหนังสือ"
+                     },
+                     {
+                            "word": "Create",
+                            "ipa": "kriˈeɪt",
+                            "definition": "สร้างสรรค์ (Action Verb)",
+                            "example": "She wants to create a new app.",
+                            "example_th": "เธอต้องการสร้างแอปใหม่"
+                     },
+                     {
+                            "word": "Determine",
+                            "ipa": "dɪˈtɜːrmɪn",
+                            "definition": "กำหนด, ตัดสินใจแน่วแน่ (Action Verb)",
+                            "example": "Your effort will determine your success.",
+                            "example_th": "ความพยายามของคุณจะเป็นตัวกำหนดความสำเร็จ"
+                     },
+                     {
+                            "word": "Develop",
+                            "ipa": "dɪˈveləp",
+                            "definition": "พัฒนา (Action Verb)",
+                            "example": "We need to develop a plan.",
+                            "example_th": "เราจำเป็นต้องพัฒนาแผนงาน"
+                     },
+                     {
+                            "word": "Expect",
+                            "ipa": "ɪkˈspekt",
+                            "definition": "คาดหวัง (Action Verb)",
+                            "example": "I expect you to be on time.",
+                            "example_th": "ฉันคาดหวังให้คุณมาตรงเวลา"
+                     },
+                     {
+                            "word": "Explain",
+                            "ipa": "ɪkˈspleɪn",
+                            "definition": "อธิบาย (Action Verb)",
+                            "example": "Can you explain this rule?",
+                            "example_th": "คุณช่วยอธิบายกฎนี้ได้ไหม"
+                     },
+                     {
+                            "word": "Identify",
+                            "ipa": "aɪˈdentɪfaɪ",
+                            "definition": "ระบุ, ชี้ตัว (Action Verb)",
+                            "example": "Identify the problem first.",
+                            "example_th": "ระบุปัญหาให้ได้ก่อน"
+                     },
+                     {
+                            "word": "Indicate",
+                            "ipa": "ˈɪndɪkeɪt",
+                            "definition": "บ่งบอก, แสดงให้เห็น (Action Verb)",
+                            "example": "The sign indicates the way.",
+                            "example_th": "ป้ายบอกทาง"
+                     },
+                     {
+                            "word": "Maintain",
+                            "ipa": "meɪnˈteɪn",
+                            "definition": "รักษา, คงไว้ (Action Verb)",
+                            "example": "Maintain a healthy lifestyle.",
+                            "example_th": "รักษาวิถีชีวิตที่มีสุขภาพดี"
+                     },
+                     {
+                            "word": "Perform",
+                            "ipa": "pərˈfɔːrm",
+                            "definition": "ปฏิบัติ, แสดง (Action Verb)",
+                            "example": "The computer performs well.",
+                            "example_th": "คอมพิวเตอร์ทำงาน(ปฏิบัติงาน)ได้ดี"
+                     },
+                     {
+                            "word": "Provide",
+                            "ipa": "prəˈvaɪd",
+                            "definition": "จัดหาให้ (Action Verb)",
+                            "example": "They provide free lunch.",
+                            "example_th": "พวกเขาจัดหาอาหารกลางวันให้ฟรี"
+                     },
+                     {
+                            "word": "Accurate",
+                            "ipa": "ˈækjərət",
+                            "definition": "แม่นยำ, ถูกต้อง (Adjective)",
+                            "example": "Is this information accurate?",
+                            "example_th": "ข้อมูลนี้ถูกต้องแม่นยำไหม"
+                     },
+                     {
+                            "word": "Appropriate",
+                            "ipa": "əˈproʊpriət",
+                            "definition": "เหมาะสม (Adjective)",
+                            "example": "Wear appropriate clothes.",
+                            "example_th": "สวมใส่เสื้อผ้าที่เหมาะสม"
+                     },
+                     {
+                            "word": "Aware",
+                            "ipa": "əˈwer",
+                            "definition": "ตระหนัก, รู้ตัว (Adjective)",
+                            "example": "Are you aware of the risks?",
+                            "example_th": "คุณตระหนักถึงความเสี่ยงไหม"
+                     },
+                     {
+                            "word": "Basic",
+                            "ipa": "ˈbeɪsɪk",
+                            "definition": "พื้นฐาน (Adjective)",
+                            "example": "Basic skills are important.",
+                            "example_th": "ทักษะพื้นฐานเป็นสิ่งสำคัญ"
+                     },
+                     {
+                            "word": "Critical",
+                            "ipa": "ˈkrɪtɪkl",
+                            "definition": "สำคัญยิ่ง, วิกฤต, เชิงวิพากษ์ (Adjective)",
+                            "example": "Critical thinking.",
+                            "example_th": "การคิดเชิงวิพากษ์"
+                     },
+                     {
+                            "word": "Curious",
+                            "ipa": "ˈkjʊriəs",
+                            "definition": "อยากรู้อยากเห็น (Adjective & Emotion)",
+                            "example": "I am curious about the future.",
+                            "example_th": "ฉันอยากรู้เกี่ยวกับอนาคต"
+                     },
+                     {
+                            "word": "Dangerous",
+                            "ipa": "ˈdeɪndʒərəs",
+                            "definition": "อันตราย (Adjective)",
+                            "example": "It is dangerous to swim here.",
+                            "example_th": "มันอันตรายที่จะว่ายน้ำที่นี่"
+                     },
+                     {
+                            "word": "Effective",
+                            "ipa": "ɪˈfektɪv",
+                            "definition": "ได้ผล, มีประสิทธิผล (Adjective)",
+                            "example": "This medicine is effective.",
+                            "example_th": "ยานี้ได้ผลดี"
+                     },
+                     {
+                            "word": "Entire",
+                            "ipa": "ɪnˈtaɪər",
+                            "definition": "ทั้งหมด (Adjective)",
+                            "example": "I ate the entire pizza.",
+                            "example_th": "ฉันกินพิซซ่าไปทั้งถาดเลย"
+                     },
+                     {
+                            "word": "Familiar",
+                            "ipa": "fəˈmɪliər",
+                            "definition": "คุ้นเคย (Adjective)",
+                            "example": "This song sounds familiar.",
+                            "example_th": "เพลงนี้ฟังดูคุ้นหู"
+                     },
+                     {
+                            "word": "Frequent",
+                            "ipa": "ˈfriːkwənt",
+                            "definition": "บ่อย, ถี่ (Adjective)",
+                            "example": "He makes frequent visits.",
+                            "example_th": "เขามาเยี่ยมบ่อยๆ"
+                     },
+                     {
+                            "word": "Guilty",
+                            "ipa": "ˈɡɪlti",
+                            "definition": "รู้สึกผิด, มีความผิด (Adjective & Emotion)",
+                            "example": "I feel guilty about lying.",
+                            "example_th": "ฉันรู้สึกผิดที่โกหก"
+                     },
+                     {
+                            "word": "Impossible",
+                            "ipa": "ɪmˈpɑːsəbl",
+                            "definition": "เป็นไปไม่ได้ (Adjective)",
+                            "example": "Nothing is impossible.",
+                            "example_th": "ไม่มีอะไรที่เป็นไปไม่ได้"
+                     },
+                     {
+                            "word": "Initial",
+                            "ipa": "ɪˈnɪʃl",
+                            "definition": "ขั้นแรก, เริ่มต้น (Adjective)",
+                            "example": "My initial plan failed.",
+                            "example_th": "แผนขั้นต้นของฉันล้มเหลว"
+                     },
+                     {
+                            "word": "Obvious",
+                            "ipa": "ˈɑːbviəs",
+                            "definition": "ชัดเจน (Adjective)",
+                            "example": "It is obvious that he is lying.",
+                            "example_th": "มันชัดเจนว่าเขากำลังโกหก"
+                     },
+                     {
+                            "word": "Positive",
+                            "ipa": "ˈpɑːzətɪv",
+                            "definition": "เชิงบวก, มั่นใจ (Adjective & Emotion)",
+                            "example": "Stay positive.",
+                            "example_th": "มองโลกในแง่บวกเข้าไว้"
+                     },
+                     {
+                            "word": "Relevant",
+                            "ipa": "ˈreləvənt",
+                            "definition": "ที่เกี่ยวข้อง, สัมพันธ์กัน (Adjective)",
+                            "example": "Keep the discussion relevant.",
+                            "example_th": "ให้การสนทนาอยู่ในประเด็นที่เกี่ยวข้อง"
+                     },
+                     {
+                            "word": "Serious",
+                            "ipa": "ˈsɪriəs",
+                            "definition": "จริงจัง, ร้ายแรง (Adjective)",
+                            "example": "This is a serious problem.",
+                            "example_th": "นี่เป็นปัญหาร้ายแรง"
+                     },
+                     {
+                            "word": "Suitable",
+                            "ipa": "ˈsuːtəbl",
+                            "definition": "เหมาะสม (Adjective)",
+                            "example": "This movie is suitable for kids.",
+                            "example_th": "หนังเรื่องนี้เหมาะสำหรับเด็ก"
+                     },
+                     {
+                            "word": "Additionally",
+                            "ipa": "əˈdɪʃənəli",
+                            "definition": "นอกจากนี้ (Connecting Word)",
+                            "example": "Additionally, it is free.",
+                            "example_th": "นอกจากนี้ มันยังฟรีอีกด้วย"
+                     },
+                     {
+                            "word": "Currently",
+                            "ipa": "ˈkɜːrəntli",
+                            "definition": "ในปัจจุบัน, ขณะนี้ (Connecting Word)",
+                            "example": "I am currently working.",
+                            "example_th": "ขณะนี้ฉันกำลังทำงานอยู่"
+                     },
+                     {
+                            "word": "Eventually",
+                            "ipa": "ɪˈventʃuəli",
+                            "definition": "ในที่สุด, ปลายทาง (Connecting Word)",
+                            "example": "Eventually, he agreed.",
+                            "example_th": "ในที่สุด เขาก็ตกลง"
+                     },
+                     {
+                            "word": "Finally",
+                            "ipa": "ˈfaɪnəli",
+                            "definition": "ท้ายที่สุด (Connecting Word)",
+                            "example": "Finally, we arrived.",
+                            "example_th": "ในที่สุด เราก็มาถึง"
+                     },
+                     {
+                            "word": "Generally",
+                            "ipa": "ˈdʒenrəli",
+                            "definition": "โดยทั่วไป (Connecting Word)",
+                            "example": "Generally, I wake up early.",
+                            "example_th": "โดยทั่วไปแล้ว ฉันตื่นเช้า"
+                     },
+                     {
+                            "word": "Meanwhile",
+                            "ipa": "ˈmiːnwaɪl",
+                            "definition": "ในขณะเดียวกัน (Connecting Word)",
+                            "example": "Cook the pasta. Meanwhile, make the sauce.",
+                            "example_th": "ต้มพาสต้า ในขณะเดียวกันก็ทำซอส"
+                     },
+                     {
+                            "word": "Neither",
+                            "ipa": "ˈniːðər",
+                            "definition": "ไม่ทั้งสอง (Connecting Word)",
+                            "example": "Neither John nor Jane came.",
+                            "example_th": "ทั้งจอห์นและเจนไม่ได้มาทั้งคู่"
+                     },
+                     {
+                            "word": "Previously",
+                            "ipa": "ˈpriːviəsli",
+                            "definition": "ก่อนหน้านี้ (Connecting Word)",
+                            "example": "I previously lived in London.",
+                            "example_th": "ก่อนหน้านี้ฉันอาศัยอยู่ในลอนดอน"
+                     },
+                     {
+                            "word": "Recently",
+                            "ipa": "ˈriːsntli",
+                            "definition": "เมื่อเร็วๆ นี้ (Connecting Word)",
+                            "example": "I saw him recently.",
+                            "example_th": "ฉันเจอเขาเมื่อเร็วๆ นี้เอง"
+                     },
+                     {
+                            "word": "Since",
+                            "ipa": "sɪns",
+                            "definition": "เนื่องจาก, ตั้งแต่ (Connecting Word)",
+                            "example": "Since you are here, help me.",
+                            "example_th": "เนื่องจากคุณอยู่ที่นี่แล้ว ช่วยฉันหน่อยสิ"
+                     },
+                     ,
+                     {
+                            "word": "Accept",
+                            "ipa": "əkˈsept",
+                            "definition": "ยอมรับ (Action Verb)",
+                            "example": "Please accept my apology.",
+                            "example_th": "โปรดยอมรับคำขอโทษของฉัน"
+                     },
+                     {
+                            "word": "Admire",
+                            "ipa": "ədˈmaɪər",
+                            "definition": "ชื่นชม (Action Verb)",
+                            "example": "I admire your courage.",
+                            "example_th": "ฉันชื่นชมความกล้าหาญของคุณ"
+                     },
+                     {
+                            "word": "Advise",
+                            "ipa": "ədˈvaɪz",
+                            "definition": "แนะนำ (Action Verb)",
+                            "example": "I advise you to rest.",
+                            "example_th": "ฉันแนะนำให้คุณพักผ่อน"
+                     },
+                     {
+                            "word": "Afford",
+                            "ipa": "əˈfɔːrd",
+                            "definition": "สามารถจ่ายได้ (Action Verb)",
+                            "example": "I can't afford a new car.",
+                            "example_th": "ฉันไม่มีเงินพอซื้อรถใหม่"
+                     },
+                     {
+                            "word": "Agree",
+                            "ipa": "əˈɡriː",
+                            "definition": "เห็นด้วย (Action Verb)",
+                            "example": "I agree with you.",
+                            "example_th": "ฉันเห็นด้วยกับคุณ"
+                     },
+                     {
+                            "word": "Announce",
+                            "ipa": "əˈnaʊns",
+                            "definition": "ประกาศ (Action Verb)",
+                            "example": "They announced their wedding.",
+                            "example_th": "พวกเขาประกาศเรื่องงานแต่งงาน"
+                     },
+                     {
+                            "word": "Answer",
+                            "ipa": "ˈænsər",
+                            "definition": "ตอบ (Action Verb)",
+                            "example": "Answer the question.",
+                            "example_th": "ตอบคำถามมา"
+                     },
+                     {
+                            "word": "Apologize",
+                            "ipa": "əˈpɑːlədʒaɪz",
+                            "definition": "ขอโทษ (Action Verb)",
+                            "example": "He apologized for being late.",
+                            "example_th": "เขาขอโทษที่มาสาย"
+                     },
+                     {
+                            "word": "Appreciate",
+                            "ipa": "əˈpriːʃieɪt",
+                            "definition": "ซาบซึ้ง, เห็นคุณค่า (Action Verb)",
+                            "example": "I appreciate your help.",
+                            "example_th": "ฉันซาบซึ้งในความช่วยเหลือของคุณ"
+                     },
+                     {
+                            "word": "Approach",
+                            "ipa": "əˈproʊtʃ",
+                            "definition": "เข้าหา (Action Verb)",
+                            "example": "Approach with caution.",
+                            "example_th": "เข้าหาด้วยความระมัดระวัง"
+                     },
+                     {
+                            "word": "Arrange",
+                            "ipa": "əˈreɪndʒ",
+                            "definition": "จัดเตรียม (Action Verb)",
+                            "example": "Can you arrange a meeting?",
+                            "example_th": "คุณช่วยจัดเตรียมการประชุมได้ไหม"
+                     },
+                     {
+                            "word": "Arrest",
+                            "ipa": "əˈrest",
+                            "definition": "จับกุม (Action Verb)",
+                            "example": "The police arrested the thief.",
+                            "example_th": "ตำรวจจับกุมขโมย"
+                     },
+                     {
+                            "word": "Arrive",
+                            "ipa": "əˈraɪv",
+                            "definition": "มาถึง (Action Verb)",
+                            "example": "We arrived late.",
+                            "example_th": "พวกเรามาถึงสาย"
+                     },
+                     {
+                            "word": "Ask",
+                            "ipa": "æsk",
+                            "definition": "ถาม, ขอ (Action Verb)",
+                            "example": "Ask him for help.",
+                            "example_th": "ขอความช่วยเหลือจากเขา"
+                     },
+                     {
+                            "word": "Attach",
+                            "ipa": "əˈtætʃ",
+                            "definition": "แนบ, ติด (Action Verb)",
+                            "example": "Attach the file to the email.",
+                            "example_th": "แนบไฟล์ไปกับอีเมล"
+                     },
+                     {
+                            "word": "Attack",
+                            "ipa": "əˈtæk",
+                            "definition": "โจมตี (Action Verb)",
+                            "example": "The dog attacked me.",
+                            "example_th": "สุนัขโจมตีฉัน"
+                     },
+                     {
+                            "word": "Attempt",
+                            "ipa": "əˈtempt",
+                            "definition": "พยายาม (Action Verb)",
+                            "example": "Don't attempt this at home.",
+                            "example_th": "อย่าพยายามทำสิ่งนี้ที่บ้าน"
+                     },
+                     {
+                            "word": "Attend",
+                            "ipa": "əˈtend",
+                            "definition": "เข้าร่วม (Action Verb)",
+                            "example": "I will attend the conference.",
+                            "example_th": "ฉันจะเข้าร่วมการประชุม"
+                     },
+                     {
+                            "word": "Attract",
+                            "ipa": "əˈtrækt",
+                            "definition": "ดึงดูด (Action Verb)",
+                            "example": "Flowers attract bees.",
+                            "example_th": "ดอกไม้ดึงดูดผึ้ง"
+                     },
+                     {
+                            "word": "Bake",
+                            "ipa": "beɪk",
+                            "definition": "อบ (ขนม) (Action Verb)",
+                            "example": "She likes to bake cakes.",
+                            "example_th": "เธอชอบอบเค้ก"
+                     },
+                     {
+                            "word": "Balance",
+                            "ipa": "ˈbæləns",
+                            "definition": "ทรงตัว, ทำให้สมดุล (Action Verb)",
+                            "example": "Balance work and life.",
+                            "example_th": "รักษาสมดุลระหว่างงานและชีวิต"
+                     },
+                     {
+                            "word": "Ban",
+                            "ipa": "bæn",
+                            "definition": "ห้าม (Action Verb)",
+                            "example": "Smoking is banned here.",
+                            "example_th": "ที่นี่ห้ามสูบบุหรี่"
+                     },
+                     {
+                            "word": "Behave",
+                            "ipa": "bɪˈheɪv",
+                            "definition": "ประพฤติตัว (Action Verb)",
+                            "example": "Behave yourself.",
+                            "example_th": "ทำตัวดีๆ หน่อย"
+                     },
+                     {
+                            "word": "Belong",
+                            "ipa": "bɪˈlɔːŋ",
+                            "definition": "เป็นของ (Action Verb)",
+                            "example": "This book belongs to me.",
+                            "example_th": "หนังสือเล่มนี้เป็นของฉัน"
+                     },
+                     {
+                            "word": "Blame",
+                            "ipa": "bleɪm",
+                            "definition": "กล่าวโทษ (Action Verb)",
+                            "example": "Don't blame me.",
+                            "example_th": "อย่ามาโทษฉันนะ"
+                     },
+                     {
+                            "word": "Borrow",
+                            "ipa": "ˈbɑːroʊ",
+                            "definition": "ขอยืม (Action Verb)",
+                            "example": "Can I borrow your pen?",
+                            "example_th": "ฉันขอยืมปากกาคุณได้ไหม"
+                     },
+                     {
+                            "word": "Bother",
+                            "ipa": "ˈbɑːðər",
+                            "definition": "รบกวน (Action Verb)",
+                            "example": "Sorry to bother you.",
+                            "example_th": "ขอโทษที่รบกวนคุณ"
+                     },
+                     {
+                            "word": "Breathe",
+                            "ipa": "briːð",
+                            "definition": "หายใจ (Action Verb)",
+                            "example": "Breathe deeply.",
+                            "example_th": "หายใจเข้าลึกๆ"
+                     },
+                     {
+                            "word": "Build",
+                            "ipa": "bɪld",
+                            "definition": "สร้าง (Action Verb)",
+                            "example": "They built a house.",
+                            "example_th": "พวกเขาสร้างบ้าน"
+                     },
+                     {
+                            "word": "Burn",
+                            "ipa": "bɜːrn",
+                            "definition": "เผา, ไหม้ (Action Verb)",
+                            "example": "Don't burn the toast.",
+                            "example_th": "อย่าปิ้งขนมปังจนไหม้"
+                     },
+                     {
+                            "word": "Calculate",
+                            "ipa": "ˈkælkjuleɪt",
+                            "definition": "คำนวณ (Action Verb)",
+                            "example": "Calculate the total cost.",
+                            "example_th": "คำนวณราคาทั้งหมด"
+                     },
+                     {
+                            "word": "Care",
+                            "ipa": "ker",
+                            "definition": "ห่วงใย, สนใจ (Action Verb)",
+                            "example": "I don't care.",
+                            "example_th": "ฉันไม่สนหรอก"
+                     },
+                     {
+                            "word": "Carry",
+                            "ipa": "ˈkæri",
+                            "definition": "ถือ, แบก (Action Verb)",
+                            "example": "He carried the box.",
+                            "example_th": "เขาถือกล่อง"
+                     },
+                     {
+                            "word": "Catch",
+                            "ipa": "kætʃ",
+                            "definition": "จับ (Action Verb)",
+                            "example": "Catch the ball.",
+                            "example_th": "รับลูกบอล"
+                     },
+                     {
+                            "word": "Celebrate",
+                            "ipa": "ˈselɪbreɪt",
+                            "definition": "เฉลิมฉลอง (Action Verb)",
+                            "example": "Let's celebrate!",
+                            "example_th": "มาฉลองกันเถอะ!"
+                     },
+                     {
+                            "word": "Change",
+                            "ipa": "tʃeɪndʒ",
+                            "definition": "เปลี่ยน (Action Verb)",
+                            "example": "Change your clothes.",
+                            "example_th": "เปลี่ยนเสื้อผ้าของคุณ"
+                     },
+                     {
+                            "word": "Charge",
+                            "ipa": "tʃɑːrdʒ",
+                            "definition": "คิดราคา, ชาร์จไฟ (Action Verb)",
+                            "example": "How much do you charge?",
+                            "example_th": "คุณคิดราคาเท่าไหร่"
+                     },
+                     {
+                            "word": "Check",
+                            "ipa": "tʃek",
+                            "definition": "ตรวจสอบ (Action Verb)",
+                            "example": "Check your email.",
+                            "example_th": "เช็คอีเมลของคุณ"
+                     },
+                     {
+                            "word": "Choose",
+                            "ipa": "tʃuːz",
+                            "definition": "เลือก (Action Verb)",
+                            "example": "Choose wisely.",
+                            "example_th": "เลือกอย่างชาญฉลาด"
+                     },
+                     {
+                            "word": "Claim",
+                            "ipa": "kleɪm",
+                            "definition": "อ้างสิทธิ์ (Action Verb)",
+                            "example": "He claimed the prize.",
+                            "example_th": "เขาขอรับรางวัล"
+                     },
+                     {
+                            "word": "Clean",
+                            "ipa": "kliːn",
+                            "definition": "ทำความสะอาด (Action Verb)",
+                            "example": "Clean your room.",
+                            "example_th": "ทำความสะอาดห้องของคุณ"
+                     },
+                     {
+                            "word": "Climb",
+                            "ipa": "klaɪm",
+                            "definition": "ปีน (Action Verb)",
+                            "example": "Climb the mountain.",
+                            "example_th": "ปีนภูเขา"
+                     },
+                     {
+                            "word": "Collect",
+                            "ipa": "kəˈlekt",
+                            "definition": "สะสม, รวบรวม (Action Verb)",
+                            "example": "I collect stamps.",
+                            "example_th": "ฉันสะสมแสตมป์"
+                     },
+                     {
+                            "word": "Combine",
+                            "ipa": "kəmˈbaɪn",
+                            "definition": "รวมกัน (Action Verb)",
+                            "example": "Combine milk and eggs.",
+                            "example_th": "ผสมนมและไข่เข้าด้วยกัน"
+                     },
+                     {
+                            "word": "Communicate",
+                            "ipa": "kəˈmjuːnɪkeɪt",
+                            "definition": "สื่อสาร (Action Verb)",
+                            "example": "We communicate daily.",
+                            "example_th": "เราสื่อสารกันทุกวัน"
+                     },
+                     {
+                            "word": "Complain",
+                            "ipa": "kəmˈpleɪn",
+                            "definition": "บ่น, ร้องเรียน (Action Verb)",
+                            "example": "Don't complain.",
+                            "example_th": "อย่าบ่นเลย"
+                     },
+                     {
+                            "word": "Complete",
+                            "ipa": "kəmˈpliːt",
+                            "definition": "ทำให้เสร็จสมบูรณ์ (Action Verb)",
+                            "example": "Complete the form.",
+                            "example_th": "กรอกแบบฟอร์มให้ครบถ้วน"
+                     },
+                     {
+                            "word": "Concentrate",
+                            "ipa": "ˈkɑːnsntreɪt",
+                            "definition": "มีสมาธิ, จดจ่อ (Action Verb)",
+                            "example": "I need to concentrate.",
+                            "example_th": "ฉันต้องการสมาธิ"
+                     },
+                     {
+                            "word": "Confirm",
+                            "ipa": "kənˈfɜːrm",
+                            "definition": "ยืนยัน (Action Verb)",
+                            "example": "Please confirm your booking.",
+                            "example_th": "กรุณายืนยันการจองของคุณ"
+                     },
+                     {
+                            "word": "Connect",
+                            "ipa": "kəˈnekt",
+                            "definition": "เชื่อมต่อ (Action Verb)",
+                            "example": "Connect to the internet.",
+                            "example_th": "เชื่อมต่ออินเทอร์เน็ต"
+                     }
+              ]
+       },
+       {
+              id: 'Adjective (คำคุณศัพท์)',
+              title: 'Adjective',
+              description: 'Adjective (คำคุณศัพท์) Oxford 3000',
+              words: [
+                     {
+                            "word": "Good",
+                            "ipa": "ɡʊd",
+                            "definition": "ดี",
+                            "example": "He is a good student.",
+                            "example_th": "เขาเป็นนักเรียนที่ดี"
+                     },
+                     {
+                            "word": "Bad",
+                            "ipa": "bæd",
+                            "definition": "เลว, แย่",
+                            "example": "Smoking is bad for your health.",
+                            "example_th": "การสูบบุหรี่เป็นผลเสียต่อสุขภาพของคุณ"
+                     },
+                     {
+                            "word": "Happy",
+                            "ipa": "ˈhæpi",
+                            "definition": "มีความสุข",
+                            "example": "I am so happy today.",
+                            "example_th": "วันนี้ฉันมีความสุขมาก"
+                     },
+                     {
+                            "word": "Sad",
+                            "ipa": "sæd",
+                            "definition": "เศร้า",
+                            "example": "The movie was very sad.",
+                            "example_th": "หนังเรื่องนี้เศร้ามาก"
+                     },
+                     {
+                            "word": "Big",
+                            "ipa": "bɪɡ",
+                            "definition": "ใหญ่",
+                            "example": "Elephants are big animals.",
+                            "example_th": "ช้างเป็นสัตว์ขนาดใหญ่"
+                     },
+                     {
+                            "word": "Small",
+                            "ipa": "smɔːl",
+                            "definition": "เล็ก",
+                            "example": "The shirt is too small for me.",
+                            "example_th": "เสื้อตัวนี้เล็กเกินไปสำหรับฉัน"
+                     },
+                     {
+                            "word": "Beautiful",
+                            "ipa": "ˈbjuːtɪfl",
+                            "definition": "สวยงาม",
+                            "example": "She has a beautiful smile.",
+                            "example_th": "เธอมีรอยยิ้มที่สวยงาม"
+                     },
+                     {
+                            "word": "Difficult",
+                            "ipa": "ˈdɪfɪkəlt",
+                            "definition": "ยาก",
+                            "example": "The exam was very difficult.",
+                            "example_th": "ข้อสอบยากมาก"
+                     },
+                     ,
+                     {
+                            "word": "Able",
+                            "ipa": "ˈeɪbl",
+                            "definition": "สามารถ",
+                            "example": "He is able to swim.",
+                            "example_th": "เขาสามารถว่ายน้ำได้"
+                     },
+                     {
+                            "word": "Active",
+                            "ipa": "ˈæktɪv",
+                            "definition": "กระตือรือร้น, คล่องแคล่ว",
+                            "example": "She is very active.",
+                            "example_th": "เธอกระตือรือร้นมาก"
+                     },
+                     {
+                            "word": "Afraid",
+                            "ipa": "əˈfreɪd",
+                            "definition": "กลัว",
+                            "example": "Don't be afraid.",
+                            "example_th": "ไม่ต้องกลัว"
+                     },
+                     {
+                            "word": "Alone",
+                            "ipa": "əˈloʊn",
+                            "definition": "คนเดียว, ลำพัง",
+                            "example": "I am alone.",
+                            "example_th": "ฉันอยู่คนเดียว"
+                     },
+                     {
+                            "word": "Amazing",
+                            "ipa": "əˈmeɪzɪŋ",
+                            "definition": "น่าทึ่ง, มหัศจรรย์",
+                            "example": "That was amazing!",
+                            "example_th": "นั่นมันมหัศจรรย์มาก"
+                     },
+                     {
+                            "word": "Angry",
+                            "ipa": "ˈæŋɡri",
+                            "definition": "โกรธ",
+                            "example": "Why are you angry?",
+                            "example_th": "ทำไมคุณถึงโกรธ"
+                     },
+                     {
+                            "word": "Available",
+                            "ipa": "əˈveɪləbl",
+                            "definition": "ว่าง, มีอยู่",
+                            "example": "Is this seat available?",
+                            "example_th": "ที่นั่งนี้ว่างไหม"
+                     },
+                     {
+                            "word": "Aware",
+                            "ipa": "əˈwer",
+                            "definition": "ตระหนัก, รู้ตัว",
+                            "example": "Be aware of the dog.",
+                            "example_th": "ระวังสุนัขด้วย (ตระหนักว่ามีสุนัข)"
+                     },
+                     {
+                            "word": "Basic",
+                            "ipa": "ˈbeɪsɪk",
+                            "definition": "พื้นฐาน",
+                            "example": "Basic English.",
+                            "example_th": "ภาษาอังกฤษพื้นฐาน"
+                     },
+                     {
+                            "word": "Better",
+                            "ipa": "ˈbetər",
+                            "definition": "ดีกว่า",
+                            "example": "This one is better.",
+                            "example_th": "อันนี้ดีกว่า"
+                     },
+                     {
+                            "word": "Bored",
+                            "ipa": "bɔːrd",
+                            "definition": "เบื่อ",
+                            "example": "I am bored.",
+                            "example_th": "ฉันเบื่อ"
+                     },
+                     {
+                            "word": "Boring",
+                            "ipa": "ˈbɔːrɪŋ",
+                            "definition": "น่าเบื่อ",
+                            "example": "The movie is boring.",
+                            "example_th": "หนังน่าเบื่อ"
+                     },
+                     {
+                            "word": "Bright",
+                            "ipa": "braɪt",
+                            "definition": "สว่าง, ฉลาด",
+                            "example": "The sun is bright.",
+                            "example_th": "ดวงอาทิตย์สว่างจ้า"
+                     },
+                     {
+                            "word": "Busy",
+                            "ipa": "ˈbɪzi",
+                            "definition": "ยุ่ง",
+                            "example": "I am very busy.",
+                            "example_th": "ฉันยุ่งมาก"
+                     },
+                     {
+                            "word": "Calm",
+                            "ipa": "kɑːm",
+                            "definition": "สงบ",
+                            "example": "Stay calm.",
+                            "example_th": "ทำใจให้สงบ"
+                     },
+                     {
+                            "word": "Careful",
+                            "ipa": "ˈkerfl",
+                            "definition": "ระมัดระวัง",
+                            "example": "Be careful driving.",
+                            "example_th": "ขับรถระวังๆ นะ"
+                     },
+                     {
+                            "word": "Cheap",
+                            "ipa": "tʃiːp",
+                            "definition": "ราคาถูก",
+                            "example": "It is very cheap.",
+                            "example_th": "มันราคาถูกมาก"
+                     },
+                     {
+                            "word": "Clean",
+                            "ipa": "kliːn",
+                            "definition": "สะอาด",
+                            "example": "Keep your room clean.",
+                            "example_th": "รักษาห้องให้สะอาด"
+                     },
+                     {
+                            "word": "Clear",
+                            "ipa": "klɪr",
+                            "definition": "ชัดเจน, ใส",
+                            "example": "Is that clear?",
+                            "example_th": "ชัดเจนไหม (เข้าใจไหม)"
+                     },
+                     {
+                            "word": "Cold",
+                            "ipa": "koʊld",
+                            "definition": "หนาว, เย็น",
+                            "example": "It is cold outside.",
+                            "example_th": "ข้างนอกอากาศหนาว"
+                     },
+                     {
+                            "word": "Comfortable",
+                            "ipa": "ˈkʌmftəbl",
+                            "definition": "สะดวกสบาย",
+                            "example": "This chair is comfortable.",
+                            "example_th": "เก้าอี้ตัวนี้นั่งสบาย"
+                     },
+                     {
+                            "word": "Common",
+                            "ipa": "ˈkɑːmən",
+                            "definition": "ทั่วไป, ธรรมดา",
+                            "example": "It is a common problem.",
+                            "example_th": "มันเป็นปัญหาทั่วไป"
+                     },
+                     {
+                            "word": "Complete",
+                            "ipa": "kəmˈpliːt",
+                            "definition": "สมบูรณ์, เสร็จสิ้น",
+                            "example": "The work is complete.",
+                            "example_th": "งานเสร็จสมบูรณ์แล้ว"
+                     },
+                     {
+                            "word": "Correct",
+                            "ipa": "kəˈrekt",
+                            "definition": "ถูกต้อง",
+                            "example": "That is correct.",
+                            "example_th": "นั่นถูกต้องแล้ว"
+                     },
+                     {
+                            "word": "Crazy",
+                            "ipa": "ˈkreɪzi",
+                            "definition": "บ้า",
+                            "example": "You are crazy.",
+                            "example_th": "คุณมันบ้าไปแล้ว"
+                     },
+                     {
+                            "word": "Dangerous",
+                            "ipa": "ˈdeɪndʒərəs",
+                            "definition": "อันตราย",
+                            "example": "Lions are dangerous.",
+                            "example_th": "สิงโตเป็นสัตว์อันตราย"
+                     },
+                     {
+                            "word": "Dark",
+                            "ipa": "dɑːrk",
+                            "definition": "มืด",
+                            "example": "It gets dark early.",
+                            "example_th": "ฟ้ามืดเร็ว"
+                     },
+                     {
+                            "word": "Dead",
+                            "ipa": "ded",
+                            "definition": "ตาย",
+                            "example": "The battery is dead.",
+                            "example_th": "แบตเตอรี่หมด (ตาย)"
+                     },
+                     {
+                            "word": "Deep",
+                            "ipa": "diːp",
+                            "definition": "ลึก",
+                            "example": "The ocean is deep.",
+                            "example_th": "มหาสมุทรมีความลึก"
+                     },
+                     {
+                            "word": "Delicious",
+                            "ipa": "dɪˈlɪʃəs",
+                            "definition": "อร่อย",
+                            "example": "The food was delicious.",
+                            "example_th": "อาหารอร่อยมาก"
+                     },
+                     {
+                            "word": "Different",
+                            "ipa": "ˈdɪfrənt",
+                            "definition": "แตกต่าง",
+                            "example": "They are very different.",
+                            "example_th": "พวกเขาแตกต่างกันมาก"
+                     },
+                     {
+                            "word": "Dirty",
+                            "ipa": "ˈdɜːrti",
+                            "definition": "สกปรก",
+                            "example": "Your hands are dirty.",
+                            "example_th": "มือของคุณสกปรก"
+                     },
+                     {
+                            "word": "Dry",
+                            "ipa": "draɪ",
+                            "definition": "แห้ง",
+                            "example": "Keep it dry.",
+                            "example_th": "เก็บไว้ในที่แห้ง"
+                     },
+                     {
+                            "word": "Early",
+                            "ipa": "ˈɜːrli",
+                            "definition": "แต่เช้า, ก่อนเวลา",
+                            "example": "I woke up early.",
+                            "example_th": "ฉันตื่นแต่เช้า"
+                     },
+                     {
+                            "word": "Easy",
+                            "ipa": "ˈiːzi",
+                            "definition": "ง่าย",
+                            "example": "The test was easy.",
+                            "example_th": "ข้อสอบง่าย"
+                     },
+                     {
+                            "word": "Empty",
+                            "ipa": "ˈempti",
+                            "definition": "ว่างเปล่า",
+                            "example": "The box is empty.",
+                            "example_th": "กล่องว่างเปล่า"
+                     },
+                     {
+                            "word": "Excited",
+                            "ipa": "ɪkˈsaɪtɪd",
+                            "definition": "ตื่นเต้น",
+                            "example": "I am so excited.",
+                            "example_th": "ฉันตื่นเต้นมาก"
+                     },
+                     {
+                            "word": "Expensive",
+                            "ipa": "ɪkˈspensɪv",
+                            "definition": "แพง",
+                            "example": "That car is expensive.",
+                            "example_th": "รถคันนั้นราคาแพง"
+                     },
+                     {
+                            "word": "Famous",
+                            "ipa": "ˈfeɪməs",
+                            "definition": "มีชื่อเสียง",
+                            "example": "He is a famous actor.",
+                            "example_th": "เขาเป็นนักแสดงที่มีชื่อเสียง"
+                     },
+                     {
+                            "word": "Far",
+                            "ipa": "fɑːr",
+                            "definition": "ไกล",
+                            "example": "Is it far from here?",
+                            "example_th": "มันอยู่ไกลจากที่นี่ไหม"
+                     },
+                     {
+                            "word": "Fast",
+                            "ipa": "fæst",
+                            "definition": "เร็ว",
+                            "example": "Run fast.",
+                            "example_th": "วิ่งเร็วๆ"
+                     },
+                     {
+                            "word": "Fat",
+                            "ipa": "fæt",
+                            "definition": "อ้วน",
+                            "example": "A fat cat.",
+                            "example_th": "แมวอ้วน"
+                     },
+                     {
+                            "word": "Final",
+                            "ipa": "ˈfaɪnl",
+                            "definition": "สุดท้าย",
+                            "example": "The final exam.",
+                            "example_th": "การสอบครั้งสุดท้าย (สอบปลายภาค)"
+                     },
+                     {
+                            "word": "Fine",
+                            "ipa": "faɪn",
+                            "definition": "สบายดี, ดี",
+                            "example": "I am fine.",
+                            "example_th": "ฉันสบายดี"
+                     },
+                     {
+                            "word": "Free",
+                            "ipa": "friː",
+                            "definition": "ฟรี, อิสระ, ว่าง",
+                            "example": "Are you free tomorrow?",
+                            "example_th": "พรุ่งนี้คุณว่างไหม"
+                     },
+                     {
+                            "word": "Fresh",
+                            "ipa": "freʃ",
+                            "definition": "สด, ใหม่",
+                            "example": "Fresh fruit.",
+                            "example_th": "ผลไม้สด"
+                     },
+                     {
+                            "word": "Full",
+                            "ipa": "fʊl",
+                            "definition": "เต็ม, อิ่ม",
+                            "example": "I am full.",
+                            "example_th": "ฉันอิ่มแล้ว"
+                     },
+                     {
+                            "word": "Funny",
+                            "ipa": "ˈfʌni",
+                            "definition": "ตลก",
+                            "example": "He is very funny.",
+                            "example_th": "เขาตลกมาก"
+                     },
+                     {
+                            "word": "Hard",
+                            "ipa": "hɑːrd",
+                            "definition": "ยาก, แข็ง",
+                            "example": "It is hard to say.",
+                            "example_th": "มันยากที่จะพูด"
+                     },
+                     {
+                            "word": "Healthy",
+                            "ipa": "ˈhelθi",
+                            "definition": "สุขภาพดี",
+                            "example": "Eat healthy food.",
+                            "example_th": "กินอาหารเพื่อสุขภาพ"
+                     },
+                     {
+                            "word": "Heavy",
+                            "ipa": "ˈhevi",
+                            "definition": "หนัก",
+                            "example": "This box is heavy.",
+                            "example_th": "กล่องนี้หนัก"
+                     },
+                     {
+                            "word": "High",
+                            "ipa": "haɪ",
+                            "definition": "สูง",
+                            "example": "High prices.",
+                            "example_th": "ราคาสูง"
+                     },
+                     {
+                            "word": "Hot",
+                            "ipa": "hɑːt",
+                            "definition": "ร้อน",
+                            "example": "Be careful, it's hot.",
+                            "example_th": "ระวังนะ มันร้อน"
+                     },
+                     {
+                            "word": "Huge",
+                            "ipa": "hjuːdʒ",
+                            "definition": "ใหญ่โต",
+                            "example": "A huge mistake.",
+                            "example_th": "ความผิดพลาดครั้งใหญ่หลวง"
+                     },
+                     {
+                            "word": "Hungry",
+                            "ipa": "ˈhʌŋɡri",
+                            "definition": "หิว",
+                            "example": "I am hungry.",
+                            "example_th": "ฉันหิว"
+                     },
+                     {
+                            "word": "Important",
+                            "ipa": "ɪmˈpɔːrtnt",
+                            "definition": "สำคัญ",
+                            "example": "It is important.",
+                            "example_th": "มันสำคัญ"
+                     },
+                     {
+                            "word": "Interesting",
+                            "ipa": "ˈɪntrəstɪŋ",
+                            "definition": "น่าสนใจ",
+                            "example": "That is interesting.",
+                            "example_th": "นั่นน่าสนใจนะ"
+                     },
+                     {
+                            "word": "Kind",
+                            "ipa": "kaɪnd",
+                            "definition": "ใจดี",
+                            "example": "She is very kind.",
+                            "example_th": "เธอใจดีมาก"
+                     },
+                     {
+                            "word": "Late",
+                            "ipa": "leɪt",
+                            "definition": "สาย, ดึก",
+                            "example": "Don't be late.",
+                            "example_th": "อย่ามาสายนะ"
+                     },
+                     {
+                            "word": "Light",
+                            "ipa": "laɪt",
+                            "definition": "เบา, สว่าง",
+                            "example": "The bag is light.",
+                            "example_th": "กระเป๋าใบนี้เบา"
+                     },
+                     {
+                            "word": "Lonely",
+                            "ipa": "ˈloʊnli",
+                            "definition": "เหงา",
+                            "example": "I feel lonely.",
+                            "example_th": "ฉันรู้สึกเหงา"
+                     },
+                     {
+                            "word": "Long",
+                            "ipa": "lɔːŋ",
+                            "definition": "ยาว, นาน",
+                            "example": "A long time ago.",
+                            "example_th": "นานมาแล้ว"
+                     },
+                     {
+                            "word": "Loud",
+                            "ipa": "laʊd",
+                            "definition": "เสียงดัง",
+                            "example": "The music is too loud.",
+                            "example_th": "เพลงเสียงดังเกินไป"
+                     },
+                     {
+                            "word": "Low",
+                            "ipa": "loʊ",
+                            "definition": "ต่ำ",
+                            "example": "Low battery.",
+                            "example_th": "แบตเตอรี่ต่ำ"
+                     },
+                     {
+                            "word": "Lucky",
+                            "ipa": "ˈlʌki",
+                            "definition": "โชคดี",
+                            "example": "You are lucky.",
+                            "example_th": "คุณโชคดี"
+                     },
+                     {
+                            "word": "Main",
+                            "ipa": "meɪn",
+                            "definition": "หลัก",
+                            "example": "The main road.",
+                            "example_th": "ถนนสายหลัก"
+                     },
+                     {
+                            "word": "Near",
+                            "ipa": "nɪr",
+                            "definition": "ใกล้",
+                            "example": "Is it near?",
+                            "example_th": "มันอยู่ใกล้ไหม"
+                     },
+                     {
+                            "word": "New",
+                            "ipa": "nuː",
+                            "definition": "ใหม่",
+                            "example": "I bought a new car.",
+                            "example_th": "ฉันซื้อรถใหม่"
+                     },
+                     {
+                            "word": "Nice",
+                            "ipa": "naɪs",
+                            "definition": "ดี, น่ารัก",
+                            "example": "Have a nice day.",
+                            "example_th": "ขอให้เป็นวันที่ดี"
+                     },
+                     {
+                            "word": "Old",
+                            "ipa": "oʊld",
+                            "definition": "เก่า, แก่",
+                            "example": "An old house.",
+                            "example_th": "บ้านเก่า"
+                     },
+
+                     // *** คุณสามารถก๊อปปี้รายการคำศัพท์ทั้งหมดที่ผมให้ไปก่อนหน้านี้ มาวางต่อตรงนี้ได้เลยครับ ***
+                     // *** อย่าลืมใส่เครื่องหมายจุลภาค (,) คั่นระหว่างแต่ละคำด้วยนะครับ ***
+
+              ] // ปิดอาเรย์ words
+       } // ปิด Object ของหมวด 
 ];
